@@ -11,7 +11,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-content">
-            <!-- Brand Logo Button (Clicking goes back to origin home screen fold!) -->
+            <!-- Clickable Logo goes back to home top fold screen -->
             <a href="#" class="brand-logo-link">
                 <div class="brand-logo-container">
                     <div class="vector-drone-graphic">
@@ -25,7 +25,6 @@
                     <span class="logo-text-gradient">TheDroneBrothers.co</span>
                 </div>
             </a>
-            <!-- Spacing Spanned Top Jump Menu links Layout Matrix -->
             <div class="nav-links">
                 <a href="#story">Our Story</a>
                 <a href="#team">The Crew</a>
@@ -36,7 +35,7 @@
         </div>
     </nav>
 
-    <!-- Main Title Section (Featuring Your 3-Second Cross-Fade Photo Carousel) -->
+    <!-- Main Title Screen Background Carousel Layout -->
     <section class="hero-section">
         <div id="hero-carousel-container"></div>
         <div class="hero-overlay-darkener"></div>
@@ -63,12 +62,14 @@
     <section id="team" class="section bg-cards">
         <h2 class="section-title">Meet the Crew</h2>
         <div class="card-grid">
+            <!-- Ben's Card -->
             <div class="card">
                 <span class="badge pilot-badge">Ben • Age 11</span>
                 <h3>Ben: Lead Pilot & Photographer</h3>
                 <p class="card-text">My passion for this started with a love for math and practicing coding. Once I was old enough, I joined the school drone team. In my very first year of flying, I earned 4 Gold Trophies at the REC Foundation Aerial Drone Competition and made it all the way to regionals in California.</p>
                 <p class="card-text">That training taught me how to fly with total precision—keeping the aircraft perfectly steady, navigating safely through tight gaps, and capturing aerial angles that make every event and project look its absolute best. Once I got the hang of flying, I realized I could use those same technical skills to take amazing pictures from the sky.</p>
             </div>
+            <!-- Josh's Card -->
             <div class="card">
                 <span class="badge ops-badge">Josh • Age 9</span>
                 <h3>Josh: Operations & Editing</h3>
@@ -77,7 +78,7 @@
             </div>
         </div>
     </section>
-       <!-- Portfolio Gallery Section Featuring Your 4 Showcase Slots -->
+        <!-- Portfolio Gallery Section Featuring Your 4 Showcase Slots -->
     <section id="portfolio" class="section">
         <h2 class="section-title">Our Featured Aerial Work</h2>
         <p class="intro-p">Real high-grade media captured during our precision flight operations.</p>
@@ -133,19 +134,19 @@
         </div>
     </section>
 
-    <!-- Our Goal / Contact Box (Pointing directly to your form token tracker) -->
+    <!-- Our Goal / Contact Box (Direct Mailto Router) -->
     <section id="contact" class="section contact-box">
         <h2>Our Goal</h2>
         <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our goal is to give you awesome drone media—from weddings and commercial projects to high-end hotels and resorts—that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
-        <form action="https://formspree.io" method="POST" class="booking-form">
+        <form action="mailto:benjoshstreet@gmail.com" method="GET" enctype="text/plain" class="booking-form">
             <div class="input-group">
-                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="Client Name" placeholder="Your Name" required>
             </div>
             <div class="input-group">
-                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="email" name="Client Email" placeholder="Your Email Address" required>
             </div>
             <div class="input-group">
-                <textarea name="message" rows="5" placeholder="Tell Josh about your event, resort listing, or project details..." required></textarea>
+                <textarea name="Project Details" rows="5" placeholder="Tell Josh about your event, resort listing, or project details..." required></textarea>
             </div>
             <button type="submit" class="cta-button large-btn">Book The Drone Brothers</button>
         </form>
