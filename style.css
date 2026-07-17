@@ -14,149 +14,122 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Navbar Elements */
-.navbar {
-    background-color: #000000;
+/* Apple-Tier Navbar Structure Elements */
+.apple-navbar {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #0071e3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
-.nav-content {
+.navbar-container {
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 24px;
+    padding: 12px 24px;
 }
 
-.brand-logo-link {
+.brand-origin-link {
     text-decoration: none;
     display: inline-block;
 }
 
-.brand-logo-container {
+.logo-flex-block {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
-.vector-drone-graphic {
+.vector-drone-core {
     position: relative;
-    width: 32px;
-    height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease;
+    width: 24px;
+    height: 14px;
 }
 
-.brand-logo-container:hover .vector-drone-graphic {
-    transform: scale(1.3) translateY(1px);
-}
-
-.drone-body-core {
-    width: 14px;
-    height: 10px;
-    background-color: #f5f5f7;
-    border-radius: 4px;
-    z-index: 5;
-    border: 1.5px solid #0b2545;
-}
-
-/* Interactive Theme Switching Button Style */
-.theme-btn {
-    background-color: #0b2545;
-    color: #ffffff;
-    border: 1px solid #2997ff;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: 24px;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-.theme-btn:hover {
-    background-color: #2997ff;
-    transform: scale(1.05);
-}
-.drone-camera-eye {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background-color: #000000;
-    border-radius: 50%;
-    bottom: 2px;
-    z-index: 6;
-    border: 1px solid #2997ff;
-}
-
-.drone-wing-left, .drone-wing-right {
-    position: absolute;
+.drone-hull {
     width: 12px;
-    height: 4px;
-    background-color: #cbd5e1;
-    top: 4px;
-    border-radius: 2px;
-}
-.drone-wing-left { left: -2px; transform: rotate(-12px); }
-.drone-wing-right { right: -2px; transform: rotate(12px); }
-
-.drone-prop-l, .drone-prop-r {
+    height: 8px;
+    background-color: #1d1d1f;
+    border-radius: 3px;
     position: absolute;
-    width: 14px;
-    height: 2px;
-    background-color: rgba(41, 151, 255, 0.6);
+    top: 3px;
+    left: 6px;
+    transition: background-color 0.4s ease;
+}
+
+.prop-blade-l, .prop-blade-r {
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    background-color: #0071e3;
     top: 1px;
-    border-radius: 50%;
+    border-radius: 1px;
 }
-.drone-prop-l { left: -5px; }
-.drone-prop-r { right: -5px; }
+.prop-blade-l { left: 0; }
+.prop-blade-r { right: 0; }
 
-.logo-text-gradient {
-    font-size: 17px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    background: linear-gradient(90deg, #0b2545 0%, #2997ff 50%, #ffffff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+.brand-text-dark {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #1d1d1f;
+    transition: color 0.4s ease;
 }
 
-.nav-links {
+.accent-blue {
+    color: #0071e3;
+}
+
+.navigation-links {
     display: flex;
     align-items: center;
 }
 
-.nav-links a {
-    color: #f5f5f7;
+.navigation-links a {
+    color: #515154;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 24px;
+    font-weight: 400;
     transition: color 0.2s;
 }
 
-.nav-links a:hover {
-    color: #2997ff;
+.navigation-links a:hover {
+    color: #0071e3;
 }
 
-.nav-links .nav-cta {
-    background-color: #0b2545;
-    padding: 6px 14px;
-    border-radius: 20px;
+.navigation-links .nav-cta-btn {
+    background-color: #0071e3;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 12px;
     font-weight: 500;
-    border: 1px solid #2997ff;
 }
 
-/* Background Crossfade Engine Panels */
-.hero-section {
+.navigation-links .nav-cta-btn:hover {
+    background-color: #005bb5;
+    color: #ffffff;
+}
+
+.mode-toggle-icon {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+    outline: none;
+}
+/* Immersive Crossfade Viewport Panels */
+.hero-canvas-viewport {
     position: relative;
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -190,402 +163,481 @@ body {
     opacity: 1;
 }
 
-.hero-overlay-darkener {
+.canvas-shadow-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45);
+    background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%);
     z-index: 2;
 }
 
-.hero-content-box {
+.hero-caption-alignment-box {
     position: relative;
     z-index: 3;
     color: #ffffff;
     text-align: center;
     padding: 0 24px;
-    margin-top: 60px;
 }
 
-.hero-badge {
-    background-color: rgba(41, 151, 255, 0.25);
-    color: #2997ff;
-    padding: 6px 16px;
-    border-radius: 30px;
-    font-size: 13px;
+.premium-badge-pill {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
     font-weight: 500;
     display: inline-block;
-    margin-bottom: 24px;
-    backdrop-filter: blur(5px);
+    margin-bottom: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.hero-section h1 {
-    font-size: 54px;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.2;
-    max-width: 750px;
-    margin: 0 auto 16px auto;
-    color: #ffffff;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+.apple-headline {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 12px;
 }
 
-.tagline {
-    font-size: 20px;
+.apple-sub-headline {
+    font-size: 18px;
     color: #f5f5f7;
-    max-width: 650px;
-    margin: 0 auto 40px auto;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    max-width: 550px;
+    margin: 0 auto 32px auto;
+    font-weight: 400;
 }
 
-.hero-buttons {
+.hero-cta-button-row {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
 }
 
-.cta-button {
-    display: inline-block;
+.apple-primary-btn {
     background-color: #0071e3;
     color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.cta-button:hover {
-    background-color: #005bb5;
-    transform: scale(1.02);
-}
-
-.secondary-button {
-    display: inline-block;
-    color: #2997ff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    padding: 14px 20px;
+    padding: 10px 22px;
+    border-radius: 22px;
     text-decoration: none;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.2s;
 }
 
-.secondary-button:hover {
-    text-decoration: underline;
-}
+.apple-primary-btn:hover { background-color: #005bb5; }
 
-.section {
+.apple-secondary-link {
+    color: #2997ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.apple-secondary-link:hover { text-decoration: underline; }
+
+/* Structural Panels Alignment Frameworks */
+.minimal-text-panel {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 90px 24px;
+    padding: 80px 24px 40px auto;
 }
 
-.section-title {
-    font-size: 38px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #0b2545;
-    transition: color 0.4s ease;
-}
-
-.story-box-compact {
+.panel-max-width {
     max-width: 650px;
     margin: 0 auto;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    border: 1px solid rgba(0,0,0,0.05);
-    transition: background-color 0.4s ease, border-color 0.4s ease;
-}
-
-.text-center {
     text-align: center;
 }
 
-.highlight-p {
-    font-size: 20px;
+.context-label {
+    display: block;
+    font-size: 11px;
     font-weight: 600;
-    color: #0071e3;
-    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #86868b;
+    margin-bottom: 8px;
 }
 
-.story-text {
-    font-size: 16px;
-    color: #1d1d1f;
-    transition: color 0.4s ease;
-}
-/* MASSIVE SEAMLESS EDGE-TO-EDGE WIDESCREEN IMAGE GALLERY LAYOUT CONTROLS */
-.visual-portfolio {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 40px 24px;
-}
-
-.visual-gallery-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.giant-gallery-item {
-    position: relative;
-    width: 100%;
-    height: 480px;
-    border-radius: 24px;
-    overflow: hidden;
-    background-color: #e8e8ed;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
-}
-
-.giant-gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.giant-gallery-item:hover {
-    transform: scale(1.01) translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-}
-
-.giant-gallery-item:hover img {
-    transform: scale(1.03);
-}
-
-/* PREMIUM BLURRED FLOATING APPLE-STYLE OVERLAY INFORMATION CARDS */
-.visual-overlay-card {
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
-    max-width: 450px;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 24px;
-    border-radius: 18px;
-    color: #ffffff;
-}
-
-.visual-overlay-card h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #ffffff;
-}
-
-.visual-overlay-card p {
-    font-size: 14px;
-    color: #cbd5e1;
-    line-height: 1.4;
-}
-
-/* Tech Specs Grid Layout */
-.spec-grid-visual {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 20px;
-}
-
-.spec-box-clean {
-    background-color: #ffffff;
-    padding: 30px 24px;
-    border-radius: 20px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: background-color 0.4s ease, border-color 0.4s ease;
-}
-
-.spec-icon {
+.apple-section-header {
     font-size: 32px;
-    display: inline-block;
-    margin-bottom: 12px;
-}
-
-.spec-box-clean h4 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: #0b2545;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: #1d1d1f;
+    line-height: 1.2;
+    margin-bottom: 16px;
     transition: color 0.4s ease;
 }
 
-.spec-box-clean p {
-    font-size: 14px;
+.apple-body-paragraph {
+    font-size: 16px;
     color: #515154;
     transition: color 0.4s ease;
 }
 
-/* Secure Contact Styling Configuration */
-.contact-box {
-    background-color: #0b2545;
+/* PREMIUM 3X3 SEAMLESS INTERACTIVE PHOTO CARD GALLERY GRID SETUP */
+.matrix-portfolio-viewport {
+    max-width: 1024px;
+    margin: 40px auto 80px auto;
+    padding: 0 24px;
+}
+
+.matrix-section-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.photo-grid-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.grid-card-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #e8e8ed;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+}
+
+.grid-card-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.grid-card-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.grid-card-item:hover img {
+    transform: scale(1.04);
+}
+.card-hover-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-hover-mask span {
     color: #ffffff;
-    border-radius: 28px;
-    max-width: 976px;
-    margin: 40px auto 100px auto;
-    padding: 60px 40px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px 14px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.grid-card-item:hover .card-hover-mask {
+    opacity: 1;
+}
+
+/* Analytics Reporting Bars Matrix */
+.analytics-stat-matrix {
+    background-color: #ffffff;
+    padding: 60px 24px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.matrix-grid-max-width {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.stat-reporting-box {
+    flex: 1;
     text-align: center;
 }
 
-.contact-box h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
+.metric-giant-number {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #0071e3;
+    line-height: 1.1;
+    margin-bottom: 6px;
 }
 
-.contact-box p {
-    font-size: 18px;
-    color: #f5f5f7;
-    max-width: 750px;
-    margin: 16px auto 40px auto;
+.metric-descriptor-label {
+    font-size: 13px;
+    color: #86868b;
+    font-weight: 500;
 }
 
-.booking-form {
-    max-width: 600px;
-    margin: 30px auto 0 auto;
-    text-align: left;
+/* Minimalist Tech Specifications Layer */
+.minimalist-specs-viewport {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 24px;
 }
 
-.input-group {
-    margin-bottom: 20px;
+.specs-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
-.booking-form input[type="text"],
-.booking-form input[type="email"],
-.booking-form textarea {
-    width: 100%;
-    padding: 14px 18px;
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+.clean-spec-card h4 {
     font-size: 16px;
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 4px;
+    transition: color 0.4s ease;
 }
 
-.booking-form ::placeholder {
-    color: #cbd5e1;
-    opacity: 0.8;
+.clean-spec-card p {
+    font-size: 14px;
+    color: #86868b;
 }
 
-.booking-form input:focus,
-.booking-form textarea:focus {
-    outline: none;
-    border-color: #2997ff;
-    background-color: rgba(255, 255, 255, 0.15);
+/* Secure Form Desk Framework */
+.premium-booking-viewport {
+    max-width: 1024px;
+    margin: 0 auto 100px auto;
+    padding: 0 24px;
 }
 
-.booking-form .large-btn {
+.booking-card-wrapper {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 48px;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.booking-card-wrapper h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin-bottom: 8px;
+    transition: color 0.4s ease;
+}
+
+.booking-card-wrapper p {
+    font-size: 14px;
+    color: #86868b;
+    margin-bottom: 32px;
+}
+
+.secure-apple-form input[type="text"],
+.secure-apple-form input[type="email"],
+.secure-apple-form textarea {
     width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d7;
+    background-color: #ffffff;
+    color: #1d1d1f;
+    font-size: 14px;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-row-double {
+    display: flex;
+    gap: 16px;
+}
+
+.secure-apple-form input:focus,
+.secure-apple-form textarea:focus {
+    border-color: #0071e3;
+}
+
+.apple-submit-action-btn {
+    width: 100%;
+    background-color: #0071e3;
+    color: #ffffff;
     border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+.apple-submit-action-btn:hover { background-color: #005bb5; }
+
+/* THE CINEMATIC POP-UP LIGHTBOX WINDOW DISPLAY PANEL OVERLAYS */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
 }
 
-.large-btn:hover {
-    background-color: #2997ff;
+.lightbox-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-footer {
-    background-color: #000000;
+.lightbox-window-content {
+    max-width: 85%;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-window-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.lightbox-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 36px;
+    cursor: pointer;
+    opacity: 0.7;
+    outline: none;
+}
+.lightbox-close-btn:hover { opacity: 1; }
+
+.lightbox-nav-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 44px;
+    cursor: pointer;
+    opacity: 0.4;
+    outline: none;
+    padding: 20px;
+}
+.lightbox-nav-btn:hover { opacity: 1; }
+.prev-btn { left: 16px; }
+.next-btn { right: 16px; }
+
+.minimalist-brand-footer {
+    background-color: #f5f5f7;
     color: #86868b;
     text-align: center;
-    padding: 30px 20px;
-    font-size: 13px;
+    padding: 40px 24px;
+    font-size: 11px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
-/* Dark Mode Variable Flips Configuration Matrix */
-body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
-body.dark-mode .section-title { color: #58a6ff; }
-body.dark-mode .story-box-compact, body.dark-mode .spec-box-clean { background-color: #161b22; border-color: #30363d; }
-body.dark-mode .story-text, body.dark-mode .spec-box-clean h4 { color: #ffffff; }
-body.dark-mode .spec-box-clean p { color: #8b949e; }
+/* ==========================================
+   THE INTEGRATED SYSTEM DARK MODE INVERSION MATRIX
+   ========================================== */
+body.dark-mode {
+    background-color: #000000;
+    color: #f5f5f7;
+}
 
-/* Responsive Media Viewport Alignment Layout Engine */
+body.dark-mode .apple-navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .brand-text-dark,
+body.dark-mode .clean-spec-card h4,
+body.dark-mode .booking-card-wrapper h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .drone-hull { background-color: #ffffff; }
+body.dark-mode .navigation-links a { color: #a1a1a6; }
+body.dark-mode .navigation-links a:hover { color: #2997ff; }
+body.dark-mode .apple-section-header { color: #f5f5f7; }
+body.dark-mode .apple-body-paragraph { color: #a1a1a6; }
+
+body.dark-mode .grid-card-item { background-color: #1c1c1e; }
+body.dark-mode .analytics-stat-matrix { background-color: #121212; border-color: rgba(255,255,255,0.08); }
+body.dark-mode .booking-card-wrapper { background-color: #121212; border-color: rgba(255,255,255,0.08); }
+
+body.dark-mode .secure-apple-form input,
+body.dark-mode .secure-apple-form textarea {
+    background-color: #1c1c1e;
+    border-color: #3a3a3c;
+    color: #ffffff;
+}
+
+body.dark-mode .minimalist-brand-footer {
+    background-color: #000000;
+    color: #86868b;
+    border-top-color: rgba(255,255,255,0.08);
+}
+
+/* ==========================================
+   MOBILE DISPLAY MATRIX ADAPTATION RULES
+   ========================================== */
 @media screen and (max-width: 768px) {
-    .section, .visual-portfolio {
-        padding: 50px 16px;
-    }
-    .hero-section {
-        height: 70vh;
-    }
-    .hero-section h1 {
-        font-size: 28px !important;
-        line-height: 1.3 !important;
-        margin-bottom: 12px !important;
-    }
-    .tagline {
-        font-size: 15px !important;
-        margin-bottom: 24px !important;
-    }
-    .hero-content-box {
-        margin-top: 110px !important;
-    }
-    .section-title {
-        font-size: 26px;
-    }
+    .navbar-container { flex-direction: column; gap: 10px; padding: 12px; }
+    .navigation-links a { font-size: 11px; margin-left: 14px; }
+    .mode-toggle-icon { margin-left: 14px; }
     
-    /* Responsive adjustment for giant visual cards on phone screen viewports */
-    .giant-gallery-item {
-        height: 320px;
-    }
-    .visual-overlay-card {
-        bottom: 16px;
-        left: 16px;
-        right: 16px;
-        padding: 16px;
-        max-width: none;
-    }
-    .visual-overlay-card h3 {
-        font-size: 18px;
-    }
-    .visual-overlay-card p {
-        font-size: 12px;
-    }
-
-    .card-grid, .spec-grid-visual {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .story-box-compact, .contact-box {
-        padding: 30px 16px;
-    }
-    .contact-box h2 {
-        font-size: 24px;
-    }
-    .nav-content {
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px 16px;
-    }
-    .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: wrap;
-    }
-    .nav-links a {
-        font-size: 11px;
-        margin-left: 0;
-        padding: 4px 6px;
-    }
-    .nav-links .nav-cta {
-        padding: 4px 8px;
-    }
-    .theme-btn {
-        margin-left: 0;
-        padding: 4px 8px;
-        font-size: 11px;
-    }
+    .hero-canvas-viewport { height: 60vh; }
+    .apple-headline { font-size: 28px; }
+    .apple-sub-headline { font-size: 14px; margin-bottom: 24px; }
+    
+    .minimal-text-panel { padding: 50px 16px 20px 16px; }
+    .apple-section-header { font-size: 24px; }
+    
+    /* Responsive 3x3 layout adjustment for phone displays */
+    .matrix-portfolio-viewport { padding: 0 16px; margin-bottom: 40px; }
+    .photo-grid-3x3 { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    
+    .matrix-grid-max-width { flex-direction: column; gap: 24px; align-items: center; }
+    .analytics-stat-matrix { padding: 40px 16px; }
+    
+    .specs-grid-layout { grid-template-columns: 1fr; gap: 20px; }
+    .minimalist-specs-viewport { padding: 40px 16px; }
+    
+    .premium-booking-viewport { margin-bottom: 50px; padding: 0 16px; }
+    .booking-card-wrapper { padding: 24px 16px; }
+    .form-row-double { flex-direction: column; gap: 0; }
+    
+    .lightbox-window-content { max-width: 95%; }
+    .prev-btn { left: 4px; }
+    .next-btn { right: 4px; }
+    .lightbox-nav-btn { font-size: 32px; }
 }
