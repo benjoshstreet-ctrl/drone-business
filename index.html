@@ -24,7 +24,7 @@
             </div>
             <div class="nav-links">
                 <a href="#story">Our Story</a>
-                <a href="#team">Our Work</a>
+                <a href="#portfolio">Our Work</a>
                 <a href="#gear">Tech</a>
                 <a href="#contact" class="nav-cta">Book Flight</a>
                 <button id="theme-toggle" class="theme-btn">🌓 Mode</button>
@@ -43,7 +43,7 @@
             <p class="tagline">Professional aerial photography for luxury resorts, weddings, and commercial listings.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="cta-button">Book Flight</a>
-                <a href="#team" class="secondary-button">See Our Work ↓</a>
+                <a href="#portfolio" class="secondary-button">See Our Work ↓</a>
             </div>
         </div>
     </section>
@@ -57,23 +57,19 @@
         </div>
     </section>
 
-    <!-- Meet the Crew / Featured Work Section -->
-    <section id="team" class="section bg-cards">
-        <h2 class="section-title">Meet the Crew</h2>
-        
+    <!-- Our Work Portfolio Grid -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Our Work</h2>
         <div class="card-grid">
             <div class="card">
                 <span class="badge pilot-badge">Ben • Age 11</span>
                 <h3>Ben: Lead Pilot & Photographer</h3>
                 <p class="card-text">My passion for this started with a love for math and practicing coding. Once I was old enough, I joined the school drone team. In my very first year of flying, I earned 4 Gold Trophies at the REC Foundation Aerial Drone Competition and made it all the way to regionals in California.</p>
-                <p class="card-text">That training taught me how to fly with total precision—keeping the aircraft perfectly steady, navigating safely through tight gaps, and capturing aerial angles that make every event and project look its absolute best.</p>
             </div>
-
             <div class="card">
                 <span class="badge ops-badge">Josh • Age 9</span>
                 <h3>Josh: Operations & Editing</h3>
-                <p class="card-text">I knew I wanted to turn this idea into a real company, so I asked my brother, Josh, to tag along with me, and he was incredibly happy to join the team. To make the business a reality, we pooled our savings from a neighborhood lemonade stand to buy a professional DJI Mini 4 Pro.</p>
-                <p class="card-text">While I focus on capturing perfect shots, smooth videos, and stunning aerial footage, Josh commands our digital operations on the ground. He transforms our raw files into polished media, handles our email replies, and keeps our schedule on track.</p>
+                <p class="card-text">To make the business a reality, we pooled our savings from a neighborhood lemonade stand to buy a professional DJI Mini 4 Pro. While I focus on capturing perfect shots, Josh commands our digital operations on the ground.</p>
             </div>
         </div>
     </section>
@@ -84,7 +80,7 @@
         <div class="spec-grid">
             <div class="spec-box">
                 <h4>4K Cinematic Video</h4>
-                <p>Shoots crystal-clear footage at 60 frames per second for super smooth resort and property tours.</p>
+                <p>Shoots crystal-clear footage at 60 frames per second for super smooth property tours.</p>
             </div>
             <div class="spec-box">
                 <h4>True Vertical Shooting</h4>
@@ -100,7 +96,7 @@
     <!-- Our Goal / Contact Box -->
     <section id="contact" class="section contact-box">
         <h2>Our Goal</h2>
-        <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our goal is to give you awesome drone media—from weddings and commercial projects to high-end hotels and resorts—that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
+        <p>Our goal is to give you awesome drone media that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
         
         <form action="https://formspree.io" method="POST" class="booking-form">
             <div class="input-group">
@@ -141,7 +137,6 @@
             elements[currentIndex].classList.add('active');
         }, 3000);
 
-        // Simple theme class toggle linker script
         const toggleBtn = document.getElementById('theme-toggle');
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
