@@ -11,7 +11,6 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-content">
-            <!-- Brand Logo Button (Clicking goes back to origin home screen fold!) -->
             <a href="#" class="brand-logo-link">
                 <div class="brand-logo-container">
                     <div class="vector-drone-graphic">
@@ -25,125 +24,110 @@
                     <span class="logo-text-gradient">TheDroneBrothers.co</span>
                 </div>
             </a>
-            <!-- Top Jump Menu links Layout Matrix with Dark Mode Button Connected -->
             <div class="nav-links">
                 <a href="#story">Our Story</a>
-                <a href="#team">The Crew</a>
                 <a href="#portfolio">Our Work</a>
-                <a href="#gear">Our Drone</a>
+                <a href="#gear">Tech</a>
                 <a href="#contact" class="nav-cta">Book Flight</a>
-                <!-- The Interactive Mode Toggle Button Layout Link -->
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark and Light Mode">🌓 Mode</button>
+                <button id="theme-toggle" class="theme-btn">🌓 Mode</button>
             </div>
         </div>
     </nav>
 
-    <!-- Main Title Section (Featuring Your 3-Second Cross-Fade Photo Carousel) -->
+    <!-- Main Title Screen (Featuring Your 3-Second Cross-Fade Photo Carousel) -->
     <section class="hero-section">
-        <!-- The Dynamic Media Container for Your 8 Background Images -->
         <div id="hero-carousel-container"></div>
         <div class="hero-overlay-darkener"></div>
         <div class="hero-content-box">
             <span class="hero-badge">Saving for College Funds 🎓</span>
             <h1>Precision from perspective.</h1>
-            <p class="tagline">Providing professional aerial-grade photos and videos for weddings, commercial listings, hotels, and luxury resorts.</p>
+            <p class="tagline">Professional aerial photography for luxury resorts, weddings, and commercial listings.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="cta-button">Book The Drone Brothers</a>
+                <a href="#contact" class="cta-button">Book Flight</a>
                 <a href="#portfolio" class="secondary-button">See Our Work ↓</a>
             </div>
         </div>
     </section>
-        <!-- Our Story Section -->
-    <section id="story" class="section">
+
+    <!-- Our Story Section (Short & Punchy!) -->
+    <section id="story" class="section text-center">
         <h2 class="section-title">Our Story</h2>
-        <div class="story-box">
-            <p class="highlight-p">We didn't just ask our parents for a toy drone. We ran a crazy-successful neighborhood lemonade stand, pooled every single cent of our savings together to buy a professional DJI Mini 4 Pro, and launched a real business.</p>
-            <p class="story-text">My 9-year-old brother, Josh, and I, Ben, started this drone business to get a head start on saving for our college funds.</p>
+        <div class="story-box-compact">
+            <p class="highlight-p">Founded by Ben (Age 11) & Josh (Age 9).</p>
+            <p class="story-text">We pooled our neighborhood savings to buy a professional DJI Mini 4 Pro, bringing robotics-grade flight precision and cinematic aerial photography directly to our clients to jumpstart our future college funds.</p>
         </div>
     </section>
 
-    <!-- Meet the Crew Section -->
-    <section id="team" class="section bg-cards">
-        <h2 class="section-title">Meet the Crew</h2>
-        <div class="card-grid">
-            <!-- Ben's Card -->
-            <div class="card">
-                <span class="badge pilot-badge">Ben • Age 11</span>
-                <h3>Ben: Lead Pilot & Photographer</h3>
-                <p class="card-text">My passion for this started with a love for math and practicing coding. Once I was old enough, I joined the school drone team. In my very first year of flying, I earned 4 Gold Trophies at the REC Foundation Aerial Drone Competition and made it all the way to regionals in California.</p>
-                <p class="card-text">That training taught me how to fly with total precision—keeping the aircraft perfectly steady, navigating safely through tight gaps, and capturing aerial angles that make every event and project look its absolute best. Once I got the hang of flying, I realized I could use those same technical skills to take amazing pictures from the sky.</p>
-            </div>
-            <!-- Josh's Card -->
-            <div class="card">
-                <span class="badge ops-badge">Josh • Age 9</span>
-                <h3>Josh: Operations & Editing</h3>
-                <p class="card-text">I knew I wanted to turn this idea into a real company, so I asked my brother, Josh, to tag along with me, and he was incredibly happy to join the team. To make the business a reality, we pooled our savings from a neighborhood lemonade stand to buy a professional DJI Mini 4 Pro.</p>
-                <p class="card-text">While I focus on capturing perfect shots, smooth videos, and stunning aerial footage, Josh commands our digital operations on the ground. He has a great eye for detail, transforms our raw files into polished media, handles our email replies, and keeps our schedule on track.</p>
-            </div>
-        </div>
-    </section>
-        <!-- Portfolio Gallery Section Featuring Your 4 Showcase Slots -->
-    <section id="portfolio" class="section">
-        <h2 class="section-title">Our Featured Aerial Work</h2>
-        <p class="intro-p">Real high-grade media captured during our precision flight operations.</p>
-        <div class="gallery-grid">
-            <div class="gallery-item">
+    <!-- Portfolio Gallery Section (MASSIVE WIDESCREEN IMAGES TAKE OVER HERE) -->
+    <section id="portfolio" class="visual-portfolio">
+        <div class="visual-gallery-grid">
+            
+            <!-- Slot 1: House -->
+            <div class="giant-gallery-item">
                 <img src="house.jpeg" alt="Luxury House Shoot">
-                <div class="gallery-overlay">
-                    <h5>Luxury Resorts & Estates</h5>
-                    <p>A top-down overview of a hillside mansion, framing the entire footprint of the property, driveway, and pool layout for real estate portfolios.</p>
+                <div class="visual-overlay-card">
+                    <h3>Luxury Resorts & Estates</h3>
+                    <p>Top-down mansion mapping for elite real estate portfolios.</p>
                 </div>
             </div>
-            <div class="gallery-item">
+
+            <!-- Slot 2: Los Angeles View -->
+            <div class="giant-gallery-item">
                 <img src="losangeles.jpeg" alt="Cityscape Aerial photography">
-                <div class="gallery-overlay">
-                    <h5>Cityscapes & Commercial</h5>
-                    <p>Keeping the camera perfectly level over open water to capture the beautiful skyline and marina from an altitude that makes the city look completely cinematic.</p>
+                <div class="visual-overlay-card">
+                    <h3>Commercial Cityscapes</h3>
+                    <p>Perfectly level skyline horizons captured at high altitudes.</p>
                 </div>
             </div>
-            <div class="gallery-item">
+
+            <!-- Slot 3: Lighthouse -->
+            <div class="giant-gallery-item">
                 <img src="lighthouse.jpeg" alt="Lighthouse Flight">
-                <div class="gallery-overlay">
-                    <h5>Special Landmarks</h5>
-                    <p>I flew right into the sunset path to frame this lighthouse, catching the golden sunlight reflecting off the grass path and water.</p>
+                <div class="visual-overlay-card">
+                    <h3>Landmarks & Events</h3>
+                    <p>Cinematic golden hour tracking across coastal horizons.</p>
                 </div>
             </div>
-            <div class="gallery-item">
+
+            <!-- Slot 4: Boat -->
+            <div class="giant-gallery-item">
                 <img src="boat.jpeg" alt="Maritime Property Shoot">
-                <div class="gallery-overlay">
-                    <h5>Maritime & Waterfront</h5>
-                    <p>Using tournament-precision flying to orbit this massive historical ship, getting a crisp angle that shows the giant red funnels and dockyard layout.</p>
+                <div class="visual-overlay-card">
+                    <h3>Maritime Portfolio</h3>
+                    <p>Tournament-precision orbital tracking over open water listing structures.</p>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- The Drone & Tech Capabilities Sheet -->
+    <!-- Tech Specs Block (Visual Grid) -->
     <section id="gear" class="section">
-        <h2 class="section-title">The DJI Mini 4 Pro</h2>
-        <p class="intro-p">We fly a professional-grade system packed with high-end camera tech and smart flight systems.</p>
-        <div class="spec-grid">
-            <div class="spec-box">
-                <h4>4K Cinematic Video</h4>
-                <p>Shoots crystal-clear footage at 60 frames per second for super smooth resort and property tours.</p>
+        <div class="spec-grid-visual">
+            <div class="spec-box-clean">
+                <span class="spec-icon">🎥</span>
+                <h4>4K Cinematic</h4>
+                <p>Ultra-smooth 60fps tracking.</p>
             </div>
-            <div class="spec-box">
-                <h4>True Vertical Shooting</h4>
-                <p>Rotates the DJI camera matching professional social media formats for promotional reels.</p>
+            <div class="spec-box-clean">
+                <span class="spec-icon">📱</span>
+                <h4>Vertical Video</h4>
+                <p>Optimized social media formats.</p>
             </div>
-            <div class="spec-box">
-                <h4>Omnidirectional Obstacle Sensing</h4>
-                <p>Built-in smart safety sensors that track gaps so we never crash during a live project flight.</p>
+            <div class="spec-box-clean">
+                <span class="spec-icon">🛡️</span>
+                <h4>Smart Sensing</h4>
+                <p>Omnidirectional safety systems.</p>
             </div>
         </div>
     </section>
 
-    <!-- Our Goal / Contact Box (Secure Encrypted Background Server Integration) -->
+    <!-- Booking Contact Box -->
     <section id="contact" class="section contact-box">
-        <h2>Our Goal</h2>
-        <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our goal is to give you awesome drone media—from weddings and commercial projects to high-end hotels and resorts—that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
+        <h2>Book The Drone Brothers</h2>
+        <p>Let's plan your custom flight operation. Drop your details below to send an encrypted request to our ground desk.</p>
         
-        <form action="https://formspree.io/f/xdaqkybd" method="POST" class="booking-form">
+        <form action="https://formspree.io" method="POST" class="booking-form">
             <div class="input-group">
                 <input type="text" name="name" placeholder="Your Name" required>
             </div>
@@ -151,17 +135,17 @@
                 <input type="email" name="email" placeholder="Your Email Address" required>
             </div>
             <div class="input-group">
-                <textarea name="message" rows="5" placeholder="Tell Josh about your event, resort listing, or project details..." required></textarea>
+                <textarea name="message" rows="4" placeholder="Tell us about your property, listing location, or event details..." required></textarea>
             </div>
-            <button type="submit" class="cta-button large-btn">Book The Drone Brothers</button>
+            <button type="submit" class="cta-button large-btn">Submit Booking Request</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Saving for college, one flight at a time.</p>
+        <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Saving for college, one precision flight at a time.</p>
     </footer>
 
-    <!-- BACKGROUND ROTATION SCRIPT CONTROL (Set to 3 Seconds) -->
+    <!-- BACKGROUND ROTATION ENGINE (3 Seconds) -->
     <script>
         const images = ['bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg', 'bg4.jpeg', 'bg5.jpeg', 'bg6.jpeg', 'bg7.jpeg', 'bg8.jpeg'];
         const container = document.getElementById('hero-carousel-container');
@@ -179,7 +163,7 @@
             elements[currentIndex].classList.add('active');
         }, 3000);
 
-        // Interactive Dark Mode Activation Script
+        // Theme Toggle Switcher Logic
         const toggleBtn = document.getElementById('theme-toggle');
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
