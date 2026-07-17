@@ -11,7 +11,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-content">
-            <!-- Clickable Logo goes back to home top fold screen -->
+            <!-- Brand Logo Button (Clicking goes back to origin home screen fold!) -->
             <a href="#" class="brand-logo-link">
                 <div class="brand-logo-container">
                     <div class="vector-drone-graphic">
@@ -25,6 +25,7 @@
                     <span class="logo-text-gradient">TheDroneBrothers.co</span>
                 </div>
             </a>
+            <!-- Spacing Spanned Top Jump Menu links Layout Matrix -->
             <div class="nav-links">
                 <a href="#story">Our Story</a>
                 <a href="#team">The Crew</a>
@@ -35,8 +36,9 @@
         </div>
     </nav>
 
-    <!-- Main Title Screen Background Carousel Layout -->
+    <!-- Main Title Section (Featuring Your 3-Second Cross-Fade Photo Carousel) -->
     <section class="hero-section">
+        <!-- The Dynamic Media Container for Your 8 Background Images -->
         <div id="hero-carousel-container"></div>
         <div class="hero-overlay-darkener"></div>
         <div class="hero-content-box">
@@ -49,7 +51,7 @@
             </div>
         </div>
     </section>
-        <!-- Our Story Section -->
+    <!-- Our Story Section -->
     <section id="story" class="section">
         <h2 class="section-title">Our Story</h2>
         <div class="story-box">
@@ -78,7 +80,7 @@
             </div>
         </div>
     </section>
-        <!-- Portfolio Gallery Section Featuring Your 4 Showcase Slots -->
+    <!-- Portfolio Gallery Section Featuring Your 4 Showcase Slots -->
     <section id="portfolio" class="section">
         <h2 class="section-title">Our Featured Aerial Work</h2>
         <p class="intro-p">Real high-grade media captured during our precision flight operations.</p>
@@ -134,19 +136,20 @@
         </div>
     </section>
 
-    <!-- Our Goal / Contact Box (Direct Mailto Router) -->
+    <!-- Our Goal / Contact Box (Secure Encrypted Background Server Integration) -->
     <section id="contact" class="section contact-box">
         <h2>Our Goal</h2>
         <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our goal is to give you awesome drone media—from weddings and commercial projects to high-end hotels and resorts—that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
-        <form action="mailto:benjoshstreet@gmail.com" method="GET" enctype="text/plain" class="booking-form">
+        
+        <form action="https://formspree.io/f/xdaqkybd" method="POST" class="booking-form">
             <div class="input-group">
-                <input type="text" name="Client Name" placeholder="Your Name" required>
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
             <div class="input-group">
-                <input type="email" name="Client Email" placeholder="Your Email Address" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
             </div>
             <div class="input-group">
-                <textarea name="Project Details" rows="5" placeholder="Tell Josh about your event, resort listing, or project details..." required></textarea>
+                <textarea name="message" rows="5" placeholder="Tell Josh about your event, resort listing, or project details..." required></textarea>
             </div>
             <button type="submit" class="cta-button large-btn">Book The Drone Brothers</button>
         </form>
