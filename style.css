@@ -208,6 +208,7 @@ body {
     padding: 0 24px;
     margin-top: 60px;
 }
+
 .hero-badge {
     background-color: rgba(41, 151, 255, 0.25);
     color: #2997ff;
@@ -292,21 +293,26 @@ body {
     transition: color 0.4s ease;
 }
 
-.story-box {
-    max-width: 750px;
+.story-box-compact {
+    max-width: 650px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
+    text-align: center;
     border: 1px solid rgba(0,0,0,0.05);
     transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .highlight-p {
     font-size: 20px;
     font-weight: 600;
     color: #0071e3;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .story-text {
@@ -314,147 +320,113 @@ body {
     color: #1d1d1f;
     transition: color 0.4s ease;
 }
-
-.intro-p {
-    font-size: 18px;
-    color: #515154;
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 40px auto;
-    transition: color 0.4s ease;
+/* MASSIVE SEAMLESS EDGE-TO-EDGE WIDESCREEN IMAGE GALLERY LAYOUT CONTROLS */
+.visual-portfolio {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 24px;
 }
 
-.card-grid {
+.visual-gallery-grid {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.card {
-    background-color: #ffffff;
-    border-radius: 22px;
-    padding: 40px;
-    flex: 1;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, background-color 0.4s ease, border-color 0.4s ease;
+.giant-gallery-item {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: #e8e8ed;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.giant-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
 }
 
-.badge {
-    display: inline-block;
-    font-size: 11px;
+.giant-gallery-item:hover {
+    transform: scale(1.01) translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.giant-gallery-item:hover img {
+    transform: scale(1.03);
+}
+
+/* PREMIUM BLURRED FLOATING APPLE-STYLE OVERLAY INFORMATION CARDS */
+.visual-overlay-card {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 18px;
+    color: #ffffff;
+}
+
+.visual-overlay-card h3 {
+    font-size: 22px;
     font-weight: 700;
-    padding: 5px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+    color: #ffffff;
 }
 
-.pilot-badge { background-color: #0b2545; color: #ffffff; }
-.ops-badge { background-color: #e6f2ff; color: #0071e3; }
-
-.card h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #0b2545;
-    transition: color 0.4s ease;
+.visual-overlay-card p {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.4;
 }
 
-.card-text {
-    font-size: 15px;
-    color: #515154;
-    margin-bottom: 16px;
-    transition: color 0.4s ease;
-}
-
-.gallery-grid {
+/* Tech Specs Grid Layout */
+.spec-grid-visual {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 20px;
 }
 
-.gallery-item {
-    position: relative;
-    overflow: hidden;
+.spec-box-clean {
+    background-color: #ffffff;
+    padding: 30px 24px;
     border-radius: 20px;
-    background-color: #e8e8ed;
-    height: 340px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
-}
-
-.gallery-item:hover img {
-    transform: scale(1.04);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 24px;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
-    color: #ffffff;
-}
-
-.gallery-overlay h5 {
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-.gallery-overlay p {
-    font-size: 14px;
-    color: #cbd5e1;
-    margin-bottom: 0;
-    line-height: 1.4;
-}
-
-.spec-grid {
-    display: flex;
-    gap: 20px;
-}
-
-.spec-box {
-    flex: 1;
-    background-color: #e8e8ed;
-    padding: 24px;
-    border-radius: 16px;
     text-align: center;
-    border-top: 3px solid #0071e3;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
-.spec-box h4 {
+.spec-icon {
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.spec-box-clean h4 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #0b2545;
     transition: color 0.4s ease;
 }
 
-.spec-box p {
+.spec-box-clean p {
     font-size: 14px;
     color: #515154;
     transition: color 0.4s ease;
 }
 
+/* Secure Contact Styling Configuration */
 .contact-box {
     background-color: #0b2545;
     color: #ffffff;
@@ -531,26 +503,21 @@ footer {
     font-size: 13px;
 }
 
-/* Dark Mode Rule Flips */
+/* Dark Mode Variable Flips Configuration Matrix */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
 body.dark-mode .section-title { color: #58a6ff; }
-body.dark-mode .intro-p { color: #8b949e; }
-body.dark-mode .story-box, body.dark-mode .card { background-color: #161b22; border-color: #30363d; }
-body.dark-mode .story-text, body.dark-mode .card h3 { color: #ffffff; }
-body.dark-mode .card-text { color: #c9d1d9; }
-body.dark-mode .spec-box { background-color: #161b22; border-top-color: #58a6ff; }
-body.dark-mode .spec-box h4 { color: #58a6ff; }
-body.dark-mode .spec-box p { color: #8b949e; }
+body.dark-mode .story-box-compact, body.dark-mode .spec-box-clean { background-color: #161b22; border-color: #30363d; }
+body.dark-mode .story-text, body.dark-mode .spec-box-clean h4 { color: #ffffff; }
+body.dark-mode .spec-box-clean p { color: #8b949e; }
 
 /* Responsive Media Viewport Alignment Layout Engine */
 @media screen and (max-width: 768px) {
-    .section {
+    .section, .visual-portfolio {
         padding: 50px 16px;
     }
     .hero-section {
         height: 70vh;
     }
-    /* THIS RADICAL OVERHAUL SCALE STOPS HEADLINE TEXT FROM EVER CLIPPING REGARDLESS OF DISPLAY SHAPE */
     .hero-section h1 {
         font-size: 28px !important;
         line-height: 1.3 !important;
@@ -566,15 +533,31 @@ body.dark-mode .spec-box p { color: #8b949e; }
     .section-title {
         font-size: 26px;
     }
-    .card-grid, .gallery-grid, .spec-grid {
+    
+    /* Responsive adjustment for giant visual cards on phone screen viewports */
+    .giant-gallery-item {
+        height: 320px;
+    }
+    .visual-overlay-card {
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        padding: 16px;
+        max-width: none;
+    }
+    .visual-overlay-card h3 {
+        font-size: 18px;
+    }
+    .visual-overlay-card p {
+        font-size: 12px;
+    }
+
+    .card-grid, .spec-grid-visual {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .gallery-item {
-        height: 260px;
-    }
-    .story-box, .contact-box {
+    .story-box-compact, .contact-box {
         padding: 30px 16px;
     }
     .contact-box h2 {
