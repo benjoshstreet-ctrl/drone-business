@@ -11,6 +11,8 @@ body {
     background-color: #f5f5f7;
     color: #1d1d1f;
     line-height: 1.6;
+    /* Soft transition makes the dark mode fade in smoothly instead of snapping! */
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* Navbar Elements */
@@ -64,6 +66,25 @@ body {
     border-radius: 4px;
     z-index: 5;
     border: 1.5px solid #0b2545;
+}
+
+/* Custom Interactive Light/Dark Toggle Button Styling */
+.theme-btn {
+    background-color: #0b2545;
+    color: #ffffff;
+    border: 1px solid #2997ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 24px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.theme-btn:hover {
+    background-color: #2997ff;
+    transform: scale(1.05);
 }
 .drone-camera-eye {
     position: absolute;
@@ -267,6 +288,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
     color: #0b2545;
+    transition: color 0.4s ease;
 }
 
 .story-box {
@@ -276,6 +298,7 @@ body {
     padding: 40px;
     border-radius: 20px;
     border: 1px solid rgba(0,0,0,0.05);
+    transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
 .highlight-p {
@@ -288,6 +311,7 @@ body {
 .story-text {
     font-size: 16px;
     color: #1d1d1f;
+    transition: color 0.4s ease;
 }
 
 .intro-p {
@@ -296,6 +320,7 @@ body {
     text-align: center;
     max-width: 750px;
     margin: 0 auto 40px auto;
+    transition: color 0.4s ease;
 }
 
 .card-grid {
@@ -309,7 +334,7 @@ body {
     padding: 40px;
     flex: 1;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.4s ease, border-color 0.4s ease;
 }
 
 .card:hover {
@@ -334,12 +359,14 @@ body {
     font-weight: 700;
     margin-bottom: 16px;
     color: #0b2545;
+    transition: color 0.4s ease;
 }
 
 .card-text {
     font-size: 15px;
     color: #515154;
     margin-bottom: 16px;
+    transition: color 0.4s ease;
 }
 
 .gallery-grid {
@@ -410,6 +437,7 @@ body {
     border-radius: 16px;
     text-align: center;
     border-top: 3px solid #0071e3;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .spec-box h4 {
@@ -417,11 +445,13 @@ body {
     font-weight: 600;
     margin-bottom: 8px;
     color: #0b2545;
+    transition: color 0.4s ease;
 }
 
 .spec-box p {
     font-size: 14px;
     color: #515154;
+    transition: color 0.4s ease;
 }
 
 .contact-box {
@@ -466,7 +496,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     font-size: 16px;
-    transition: border-color 0.3s, background-color 0.3s;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .booking-form ::placeholder {
@@ -500,6 +530,51 @@ footer {
     font-size: 13px;
 }
 
+/* ==========================================
+   THE BRAND-NEW PREMIUM DARK MODE COLOR FLIPS 
+   ========================================== */
+body.dark-mode {
+    background-color: #0d1117;
+    color: #f0f6fc;
+}
+
+body.dark-mode .section-title {
+    color: #58a6ff;
+}
+
+body.dark-mode .intro-p {
+    color: #8b949e;
+}
+
+body.dark-mode .story-box,
+body.dark-mode .card {
+    background-color: #161b22;
+    border-color: #30363d;
+}
+
+body.dark-mode .story-text,
+body.dark-mode .card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .card-text {
+    color: #c9d1d9;
+}
+
+body.dark-mode .spec-box {
+    background-color: #161b22;
+    border-top-color: #58a6ff;
+}
+
+body.dark-mode .spec-box h4 {
+    color: #58a6ff;
+}
+
+body.dark-mode .spec-box p {
+    color: #8b949e;
+}
+
+/* Mobile Breakpoints Matrix */
 @media screen and (max-width: 768px) {
     .section {
         padding: 50px 16px;
@@ -548,6 +623,10 @@ footer {
         padding: 4px 6px;
     }
     .nav-links .nav-cta {
+        padding: 4px 10px;
+    }
+    .theme-btn {
+        margin-left: 0;
         padding: 4px 10px;
     }
 }
