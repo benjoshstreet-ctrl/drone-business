@@ -3,177 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheDroneBrothers.co | Premium Aerial Media</title>
+    <title>TheDroneBrothers.co | Aerial Media</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Apple-Tier Fixed Navigation Structure -->
-    <nav class="apple-navbar">
-        <div class="navbar-container">
-            <a href="#" class="brand-origin-link">
-                <div class="logo-flex-block">
-                    <div class="vector-drone-core">
-                        <div class="drone-hull"></div>
-                        <div class="prop-blade-l"></div>
-                        <div class="prop-blade-r"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <!-- Your Original Clean Logo Button -->
+            <a href="#" class="brand-logo-link">
+                <div class="brand-logo-container">
+                    <div class="vector-drone-graphic">
+                        <div class="drone-body-core"></div>
+                        <div class="drone-wing-left"></div>
+                        <div class="drone-wing-right"></div>
+                        <div class="drone-prop-l"></div>
+                        <div class="drone-prop-r"></div>
+                        <div class="drone-camera-eye"></div>
                     </div>
-                    <span class="brand-text-dark">TheDroneBrothers<span class="accent-blue">.co</span></span>
+                    <span class="logo-text-gradient">TheDroneBrothers.co</span>
                 </div>
             </a>
-            <div class="navigation-links">
+            <!-- Top Links -->
+            <div class="nav-links">
                 <a href="#story">Our Story</a>
+                <a href="#team">The Crew</a>
                 <a href="#portfolio">Our Work</a>
-                <a href="#tech">Our Tech</a>
-                <a href="#contact" class="nav-cta-btn">Book Flight</a>
-                <button id="theme-toggle" class="mode-toggle-icon">🌓</button>
+                <a href="#gear">Our Drone</a>
+                <a href="#contact" class="nav-cta">Book Flight</a>
+                <button id="theme-toggle" class="theme-btn">🌓 Mode</button>
             </div>
         </div>
     </nav>
 
-    <!-- Immersive Widescreen Entry Presentation -->
-    <header class="hero-canvas-viewport">
+    <!-- Main Title Section with Restored Badge -->
+    <section class="hero-section">
         <div id="hero-carousel-container"></div>
-        <div class="canvas-shadow-overlay"></div>
-        <div class="hero-caption-alignment-box">
-            <span class="premium-badge-pill">Now Booking Flights for 2026</span>
-            <h1 class="apple-headline">Precision from perspective.</h1>
-            <p class="apple-sub-headline">Cinematic aerial media tailored for luxury resorts, weddings, and premium commercial listings.</p>
-            <div class="hero-cta-button-row">
-                <a href="#contact" class="apple-primary-btn">Book Flight Now</a>
-                <a href="#portfolio" class="apple-secondary-link">See Our Work &rarr;</a>
+        <div class="hero-overlay-darkener"></div>
+        <div class="hero-content-box">
+            <span class="hero-badge">Saving for College Funds 🎓</span>
+            <h1>Precision from perspective.</h1>
+            <p class="tagline">Professional aerial photography for luxury resorts, weddings, and commercial listings.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Book Flight</a>
+                <a href="#portfolio" class="secondary-button">See Our Work ↓</a>
             </div>
-        </div>
-    </header>
-        <!-- The Origin Foundation Story Block -->
-    <section id="story" class="minimal-text-panel">
-        <div class="panel-max-width">
-            <span class="context-label">Our Story</span>
-            <h2 class="apple-section-header">Founded by Ben & Josh. Powered by precision.</h2>
-            <p class="apple-body-paragraph">We ran a successful neighborhood lemonade stand, pooled our savings to buy a professional DJI Mini 4 Pro, and launched a real business to jumpstart our future college funds.</p>
         </div>
     </section>
 
-    <!-- Clean Apple-Style 3x3 Photo Matrix (3 Columns / 3 Rows) -->
-    <section id="portfolio" class="matrix-portfolio-viewport">
-        <div class="matrix-section-header">
-            <span class="context-label">Our Featured Aerial Gallery</span>
-            <h2 class="apple-section-header">Click any photo to enlarge.</h2>
+    <!-- Our Story Section -->
+    <section id="story" class="section">
+        <h2 class="section-title">Our Story</h2>
+        <div class="story-box">
+            <p class="highlight-p">We didn't just ask our parents for a toy drone. We ran a crazy-successful neighborhood lemonade stand, pooled every single cent of our savings together to buy a professional DJI Mini 4 Pro, and launched a real business.</p>
+            <p class="story-text">My 9-year-old brother, Josh, and I, Ben, started this drone business to get a head start on saving for our college funds.</p>
         </div>
+    </section>
+        <!-- Meet the Crew Section -->
+    <section id="team" class="section bg-cards">
+        <h2 class="section-title">Meet the Crew</h2>
+        <div class="card-grid">
+            <div class="card">
+                <span class="badge pilot-badge">Ben • Age 11</span>
+                <h3>Ben: Lead Pilot & Photographer</h3>
+                <p class="card-text">My passion for this started with a love for math and practicing coding. Once I was old enough, I joined the school drone team. In my very first year of flying, I earned 4 Gold Trophies at the REC Foundation Aerial Drone Competition and made it all the way to regionals in California.</p>
+            </div>
+            <div class="card">
+                <span class="badge ops-badge">Josh • Age 9</span>
+                <h3>Josh: Operations & Editing</h3>
+                <p class="card-text">I knew I wanted to turn this idea into a real company, so I asked my brother, Josh, to tag along with me. To make the business a reality, we pooled our savings from a neighborhood lemonade stand to buy a professional DJI Mini 4 Pro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean 3x3 Photo Matrix (3 Columns / 3 Rows) -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Our Featured Aerial Gallery</h2>
+        <p class="intro-p">Click any photo to enlarge and look through our work.</p>
         
         <div class="photo-grid-3x3">
-            
-            <!-- Row 1 / Slot 1: House -->
             <div class="grid-card-item clickable-media" data-index="0">
-                <img src="house.jpeg" alt="Luxury Hillside Mansion Estate Mapping">
+                <img src="house.jpeg" alt="Luxury Hillside Mansion">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 1 / Slot 2: Los Angeles -->
             <div class="grid-card-item clickable-media" data-index="1">
-                <img src="losangeles.jpeg" alt="Cinematic Commercial Skyline Marina">
+                <img src="losangeles.jpeg" alt="Cinematic Commercial Skyline">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 1 / Slot 3: Lighthouse -->
             <div class="grid-card-item clickable-media" data-index="2">
-                <img src="lighthouse.jpeg" alt="Golden Hour Landmark Horizon Shoot">
+                <img src="lighthouse.jpeg" alt="Golden Hour Landmark">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 2 / Slot 4: Boat -->
             <div class="grid-card-item clickable-media" data-index="3">
-                <img src="boat.jpeg" alt="Precision Orbital Vessel Tracking">
+                <img src="boat.jpeg" alt="Precision Vessel Tracking">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 2 / Slot 5: Background Photo 1 -->
             <div class="grid-card-item clickable-media" data-index="4">
-                <img src="bg1.jpeg" alt="Coastal Resort Waterfront Landscape View">
+                <img src="bg1.jpeg" alt="Coastal Resort View">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 2 / Slot 6: Background Photo 2 -->
             <div class="grid-card-item clickable-media" data-index="5">
-                <img src="bg2.jpeg" alt="Mountain Landscape Sunset Profile Flight">
+                <img src="bg2.jpeg" alt="Mountain Landscape View">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 3 / Slot 7: Background Photo 3 -->
             <div class="grid-card-item clickable-media" data-index="6">
-                <img src="bg3.jpeg" alt="Cityscape Grid Exposure Night Shoot View">
+                <img src="bg3.jpeg" alt="Cityscape Night View">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 3 / Slot 8: Background Photo 4 -->
             <div class="grid-card-item clickable-media" data-index="7">
-                <img src="bg4.jpeg" alt="Commercial Property Structural Perspective View">
+                <img src="bg4.jpeg" alt="Property Perspective View">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-            <!-- Row 3 / Slot 9: Background Photo 5 -->
             <div class="grid-card-item clickable-media" data-index="8">
-                <img src="bg5.jpeg" alt="Aerial Landscape Flight Portfolio Asset View">
+                <img src="bg5.jpeg" alt="Aerial Landscape View">
                 <div class="card-hover-mask"><span>Expand View 🔍</span></div>
             </div>
-
-        </div>
-    </section>
-        <!-- Real Authority Performance Analytics Panel -->
-    <section id="tech" class="analytics-stat-matrix">
-        <div class="matrix-grid-max-width">
-            <div class="stat-reporting-box">
-                <span class="metric-giant-number">4</span>
-                <p class="metric-descriptor-label">Gold Trophies Won (REC Foundation Aerial Drone Competition)</p>
-            </div>
-            <div class="stat-reporting-box">
-                <span class="metric-giant-number">4K</span>
-                <p class="metric-descriptor-label">Cinematic Camera Architecture</p>
-            </div>
-            <div class="stat-reporting-box">
-                <span class="metric-giant-number">Pro</span>
-                <p class="metric-descriptor-label">DJI Mini 4 Aircraft System</p>
-            </div>
         </div>
     </section>
 
-    <!-- Professional Tech Layout Block -->
-    <section class="minimalist-specs-viewport">
-        <div class="specs-grid-layout">
-            <div class="clean-spec-card">
-                <h4>True Vertical Mode</h4>
-                <p>90-degree camera rotation optimized for seamless social media promotional deployment.</p>
+    <!-- The Drone & Tech Capabilities Sheet -->
+    <section id="gear" class="section">
+        <h2 class="section-title">The DJI Mini 4 Pro</h2>
+        <div class="spec-grid">
+            <div class="spec-box">
+                <h4>4K Cinematic Video</h4>
+                <p>Shoots crystal-clear footage at 60 frames per second for super smooth resort and property tours.</p>
             </div>
-            <div class="clean-spec-card">
-                <h4>Obstacle Protection</h4>
-                <p>Omnidirectional tracking ensures absolute safety coordinates over active venues.</p>
+            <div class="spec-box">
+                <h4>True Vertical Shooting</h4>
+                <p>Rotates the DJI camera matching professional social media formats for promotional reels.</p>
             </div>
-            <div class="clean-spec-card">
-                <h4>Next-Day Media Delivery</h4>
-                <p>Rapid engineering workflows to get your media online immediately.</p>
+            <div class="spec-box">
+                <h4>Omnidirectional Obstacle Sensing</h4>
+                <p>Built-in smart safety sensors that track gaps so we never crash during a live project flight.</p>
             </div>
         </div>
     </section>
 
-    <!-- Secure Booking Contact Desk Matrix -->
-    <section id="contact" class="premium-booking-viewport">
-        <div class="booking-card-wrapper">
-            <h2>Plan Your Flight Operation.</h2>
-            <p>Tell our ground coordination desk about your real estate listing, luxury hotel resort, or custom event timeline requirements.</p>
-            
-            <form action="https://formspree.io/f/mjgnkjee" method="POST" class="secure-apple-form">
-                <div class="form-row-double">
-                    <input type="text" name="First Name" placeholder="First Name" required>
-                    <input type="text" name="Last Name" placeholder="Last Name" required>
-                </div>
-                <input type="email" name="Email Address" placeholder="Email Address" required>
-                <textarea name="Project Description" rows="4" placeholder="Property dimensions, venue coordinate details, or custom flight expectations..." required></textarea>
-                <button type="submit" class="apple-submit-action-btn">Submit Operation Request</button>
-            </form>
-        </div>
+    <!-- Our Goal / Contact Box -->
+    <section id="contact" class="section contact-box">
+        <h2>Our Goal</h2>
+        <p>Our goal is to give you awesome drone media that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
+        
+        <form action="https://formspree.io" method="POST" class="booking-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="input-group">
+                <textarea name="message" rows="5" placeholder="Tell Josh about your event, resort listing, or project details..." required></textarea>
+            </div>
+            <button type="submit" class="cta-button large-btn">Book The Drone Brothers</button>
+        </form>
     </section>
 
-    <!-- INTERACTIVE SLIDESHOW LIGHTBOX PRESENTATION OVERLAY -->
+    <!-- LIGHTBOX Presentational Window Overlay -->
     <div id="gallery-lightbox" class="lightbox-overlay">
         <button class="lightbox-close-btn" id="lightbox-close">&times;</button>
         <button class="lightbox-nav-btn prev-btn" id="lightbox-prev">&#10094;</button>
@@ -183,13 +170,12 @@
         <button class="lightbox-nav-btn next-btn" id="lightbox-next">&#10095;</button>
     </div>
 
-    <footer class="minimalist-brand-footer">
-        <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Engineered for excellence, built for future education.</p>
+    <footer>
+        <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Saving for college, one flight at a time.</p>
     </footer>
 
-    <!-- SYSTEM INTERFACE CORE LOGIC ENGINES -->
+    <!-- ENGINE SCRIPTS -->
     <script>
-        // 1. Background Image Carousel Loop Setup
         const bgImages = ['bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg', 'bg4.jpeg', 'bg5.jpeg', 'bg6.jpeg', 'bg7.jpeg', 'bg8.jpeg'];
         const bgContainer = document.getElementById('hero-carousel-container');
         let bgIndex = 0;
@@ -206,16 +192,13 @@
             bgElements[bgIndex].classList.add('active');
         }, 3000);
 
-        // 2. Interactive Light / Dark Mode Toggle Logic
         const toggleBtn = document.getElementById('theme-toggle');
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
         });
 
-        // 3. 3x3 Slide Swapping Lightbox Grid Logic Loop Engine
         const gridImages = ['house.jpeg', 'losangeles.jpeg', 'lighthouse.jpeg', 'boat.jpeg', 'bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg', 'bg4.jpeg', 'bg5.jpeg'];
         let activeGridIndex = 0;
-        
         const lightbox = document.getElementById('gallery-lightbox');
         const lightboxImg = document.getElementById('lightbox-display-img');
         const closeBtn = document.getElementById('lightbox-close');
@@ -234,17 +217,9 @@
             activeGridIndex = (activeGridIndex + direction + gridImages.length) % gridImages.length;
             lightboxImg.src = gridImages[activeGridIndex];
         };
-
         prevBtn.addEventListener('click', () => navigateLightbox(-1));
         nextBtn.addEventListener('click', () => navigateLightbox(1));
         closeBtn.addEventListener('click', () => lightbox.classList.remove('visible'));
-        
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox || e.target === document.querySelector('.lightbox-window-content')) {
-                lightbox.classList.remove('visible');
-            }
-        });
     </script>
-
 </body>
 </html>
