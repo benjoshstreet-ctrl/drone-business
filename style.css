@@ -14,17 +14,15 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR STYLE - FIXED TRANSPARENT LOOK WITH NO LINE UNDER LOGO ENTIRELY */
+/* NAVBAR SYSTEM FIXED ALIGNMENT STYLE */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background-color: #000000 !important;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    /* Line explicitly removed to keep the layout entirely borderless */
-    border-bottom: none;
+    /* Baseline explicitly disabled to match your master clean look style */
+    border-bottom: none !important;
     transition: background-color 0.4s ease;
 }
 
@@ -104,15 +102,18 @@ body {
 }
 
 .nav-links { display: flex; align-items: center; }
+
+/* HARD-LOCKS MENU LINKS TO BRIGHT WHITE TEXT */
 .nav-links a {
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
     font-size: 13px;
     margin-left: 24px;
+    font-weight: 500;
     transition: color 0.2s;
     text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
-.nav-links a:hover { color: #2997ff; }
+.nav-links a:hover { color: #2997ff !important; }
 
 .nav-links .nav-cta {
     background-color: #0071e3;
@@ -124,7 +125,7 @@ body {
 
 .theme-btn {
     background-color: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
+    color: #ffffff !important;
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 6px 14px;
     border-radius: 20px;
@@ -134,7 +135,7 @@ body {
     margin-left: 24px;
 }
 
-/* Background Carousel Slider Framework */
+/* Background Slider Controls Matrix */
 .hero-section {
     position: relative;
     height: 85vh;
@@ -165,7 +166,7 @@ body {
     border-radius: 30px; font-size: 13px; font-weight: 500; display: inline-block; margin-bottom: 24px;
     backdrop-filter: blur(5px);
 }
-css.hero-section h1 {
+.hero-section h1 {
     font-size: 54px; font-weight: 800; letter-spacing: -0.03em; max-width: 750px; margin: 0 auto 16px auto;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
@@ -183,7 +184,7 @@ css.hero-section h1 {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Structural Content Panels */
+/* Structural Content Framework Panels */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
@@ -191,7 +192,7 @@ css.hero-section h1 {
 .story-text { font-size: 16px; color: #1d1d1f; transition: color 0.4s; }
 .intro-p { font-size: 18px; color: #515154; text-align: center; max-width: 750px; margin: 0 auto 40px auto; transition: color 0.4s; }
 
-/* Crew Cards */
+/* Crew Biography Cards Layout Frameworks */
 .card-grid { display: flex; gap: 30px; }
 .card { background-color: #ffffff; border-radius: 22px; padding: 40px; flex: 1; border: 1px solid rgba(0, 0, 0, 0.05); transition: background-color 0.4s; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; }
@@ -200,7 +201,7 @@ css.hero-section h1 {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* RE-DEPLOYED 4-SLOT WORK GRID BLUEPRINT RULES */
+/* Reestablished the 4-slot equal gallery grid picture system coordinates */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -236,16 +237,15 @@ css.hero-section h1 {
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
 footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* THE INTEGRATED SYSTEM DARK THEME VARIABLE OVERRIDES PANEL MAP */
+/* THE INTEGRATED SYSTEM DARK THEME VARIABLE OVERRIDES MATRIX */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
-/* This code leaves the navbar completely transparent on dark mode with no lines! */
-body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
+body.dark-mode .navbar { background-color: rgba(13, 17, 23, 0.8) !important; }
 body.dark-mode .section-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
 body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4 { color: #ffffff; }
 body.dark-mode .card-text, body.dark-mode .spec-box p { color: #c9d1d9; }
 
-/* Mobile Adaptations Matrix Grid Setup */
+/* Mobile Device Viewport Matrix Alignment Setup */
 @media screen and (max-width: 768px) {
     .nav-content { flex-direction: column; gap: 12px; padding: 12px 16px; }
     .nav-links { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
