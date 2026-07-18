@@ -1,4 +1,4 @@
-/* Universal Settings */
+/* Universal Settings Layout Framework */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR SYSTEM FIXED TRANSPARENT LIGHT MODE ALIGNMENT */
+/* NAVBAR STYLE - ZERO BORDER LINE UNDER LOGO REMOVED ENTIRELY */
 .navbar {
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
@@ -23,8 +23,9 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background-color 0.4s ease, border-color 0.4s ease;
+    /* Border-bottom explicitly disabled to match your master screenshot view */
+    border-bottom: none;
+    transition: background-color 0.4s ease;
 }
 
 .nav-content {
@@ -133,7 +134,7 @@ body {
     margin-left: 24px;
 }
 
-/* Hero Carousel Frame Matrix */
+/* Background Carousel Panels Engine */
 .hero-section {
     position: relative;
     height: 85vh;
@@ -182,7 +183,7 @@ body {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Structural Content Panels */
+/* Content Layout Frameworks */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
@@ -190,7 +191,7 @@ body {
 .story-text { font-size: 16px; color: #1d1d1f; transition: color 0.4s; }
 .intro-p { font-size: 18px; color: #515154; text-align: center; max-width: 750px; margin: 0 auto 40px auto; transition: color 0.4s; }
 
-/* Crew Cards */
+/* Profile Description Cards */
 .card-grid { display: flex; gap: 30px; }
 .card { background-color: #ffffff; border-radius: 22px; padding: 40px; flex: 1; border: 1px solid rgba(0, 0, 0, 0.05); transition: background-color 0.4s; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; }
@@ -199,33 +200,13 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* REESTABLISHED THE FULL 4-SLOT EQUAL GALLERY GRID PICTURE SYSTEM */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-top: 20px;
-}
-.gallery-item {
-    position: relative; overflow: hidden; border-radius: 20px; background-color: #e8e8ed; height: 340px;
-    border: 1px solid rgba(0, 0, 0, 0.05); transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-}
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-.gallery-item:hover { transform: translateY(-6px); box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08); }
-.gallery-item:hover img { transform: scale(1.04); }
-.gallery-overlay {
-    position: absolute; bottom: 0; left: 0; width: 100%; padding: 24px;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); color: #ffffff;
-}
-.gallery-overlay h5 { font-size: 19px; font-weight: 600; margin-bottom: 4px; }
-.gallery-overlay p { font-size: 14px; color: #cbd5e1; margin-bottom: 0; line-height: 1.4; }
-
-/* Specs and Booking Form Layouts */
+/* Specs Grid */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
 .spec-box p { font-size: 14px; color: #515154; transition: color 0.4s; }
 
+/* Contact Desk Blocks */
 .contact-box { background-color: #0b2545; color: #ffffff; border-radius: 28px; max-width: 976px; margin: 40px auto 100px auto; padding: 60px 40px; text-align: center; }
 .contact-box h2 { font-size: 36px; margin-bottom: 16px; }
 .contact-box p { font-size: 18px; color: #f5f5f7; max-width: 750px; margin: 16px auto 40px auto; }
@@ -235,20 +216,21 @@ body {
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
 footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* THE DYNAMIC DARK MODE OVERRIDES RULES ENGINE MATRIX */
+/* THE ACTIVE INTEGRATED DARK MODE INTERFACE SYSTEM */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
-body.dark-mode .navbar { background-color: rgba(13, 17, 23, 0.6) !important; border-bottom-color: rgba(255, 255, 255, 0.05); }
+/* This specific override locks the navbar to stay completely transparent on dark mode with zero line border! */
+body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
 body.dark-mode .section-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
 body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4 { color: #ffffff; }
 body.dark-mode .card-text, body.dark-mode .spec-box p { color: #c9d1d9; }
 
-/* Mobile Adaptations Matrix */
+/* Mobile Viewport Matrix Rules */
 @media screen and (max-width: 768px) {
     .nav-content { flex-direction: column; gap: 12px; padding: 12px 16px; }
     .nav-links { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
     .nav-links a { font-size: 12px; margin-left: 0; padding: 4px 6px; }
     .hero-section h1 { font-size: 34px; }
     .tagline { font-size: 16px; }
-    .card-grid, .gallery-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
+    .card-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
 }
