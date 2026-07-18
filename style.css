@@ -14,7 +14,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR STYLE MATCHING YOUR SCREENSHOT EXACTLY */
+/* NAVBAR SYSTEM FIXED TRANSPARENT LIGHT MODE ALIGNMENT */
 .navbar {
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
@@ -133,7 +133,7 @@ body {
     margin-left: 24px;
 }
 
-/* Hero Elements */
+/* Hero Carousel Frame Matrix */
 .hero-section {
     position: relative;
     height: 85vh;
@@ -164,7 +164,6 @@ body {
     border-radius: 30px; font-size: 13px; font-weight: 500; display: inline-block; margin-bottom: 24px;
     backdrop-filter: blur(5px);
 }
-
 .hero-section h1 {
     font-size: 54px; font-weight: 800; letter-spacing: -0.03em; max-width: 750px; margin: 0 auto 16px auto;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
@@ -183,13 +182,15 @@ body {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Frameworks */
+/* Structural Content Panels */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .highlight-p { font-size: 20px; font-weight: 600; color: #0071e3; margin-bottom: 20px; }
 .story-text { font-size: 16px; color: #1d1d1f; transition: color 0.4s; }
+.intro-p { font-size: 18px; color: #515154; text-align: center; max-width: 750px; margin: 0 auto 40px auto; transition: color 0.4s; }
 
+/* Crew Cards */
 .card-grid { display: flex; gap: 30px; }
 .card { background-color: #ffffff; border-radius: 22px; padding: 40px; flex: 1; border: 1px solid rgba(0, 0, 0, 0.05); transition: background-color 0.4s; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; }
@@ -198,6 +199,28 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
+/* REESTABLISHED THE FULL 4-SLOT EQUAL GALLERY GRID PICTURE SYSTEM */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+.gallery-item {
+    position: relative; overflow: hidden; border-radius: 20px; background-color: #e8e8ed; height: 340px;
+    border: 1px solid rgba(0, 0, 0, 0.05); transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.gallery-item:hover { transform: translateY(-6px); box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08); }
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-overlay {
+    position: absolute; bottom: 0; left: 0; width: 100%; padding: 24px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); color: #ffffff;
+}
+.gallery-overlay h5 { font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+.gallery-overlay p { font-size: 14px; color: #cbd5e1; margin-bottom: 0; line-height: 1.4; }
+
+/* Specs and Booking Form Layouts */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
@@ -212,7 +235,7 @@ body {
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
 footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* DARK MODE RULES ENGINE */
+/* THE DYNAMIC DARK MODE OVERRIDES RULES ENGINE MATRIX */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
 body.dark-mode .navbar { background-color: rgba(13, 17, 23, 0.6) !important; border-bottom-color: rgba(255, 255, 255, 0.05); }
 body.dark-mode .section-title { color: #58a6ff; }
@@ -227,5 +250,5 @@ body.dark-mode .card-text, body.dark-mode .spec-box p { color: #c9d1d9; }
     .nav-links a { font-size: 12px; margin-left: 0; padding: 4px 6px; }
     .hero-section h1 { font-size: 34px; }
     .tagline { font-size: 16px; }
-    .card-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
+    .card-grid, .gallery-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
 }
