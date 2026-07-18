@@ -25,12 +25,11 @@
                     <span class="logo-text-gradient">TheDroneBrothers.co</span>
                 </div>
             </a>
-            <!-- Top Links -->
+            <!-- Top Navigation Links -->
             <div class="nav-links">
                 <a href="#story">Our Story</a>
-                <a href="#team">The Crew</a>
-                <a href="#portfolio">Our Work</a>
-                <a href="#gear">Our Drone</a>
+                <a href="#team">Our Work</a>
+                <a href="#gear">Tech</a>
                 <a href="#contact" class="nav-cta">Book Flight</a>
                 <button id="theme-toggle" class="theme-btn">🌓 Mode</button>
             </div>
@@ -41,13 +40,14 @@
     <section class="hero-section">
         <div id="hero-carousel-container"></div>
         <div class="hero-overlay-darkener"></div>
+
         <div class="hero-content-box">
             <span class="hero-badge">Saving for College Funds 🎓</span>
             <h1>Precision from perspective.</h1>
             <p class="tagline">Professional aerial photography for luxury resorts, weddings, and commercial listings.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="cta-button">Book Flight</a>
-                <a href="#portfolio" class="secondary-button">See Our Work ↓</a>
+                <a href="gallery.html" class="secondary-button">See Our Work ↓</a>
             </div>
         </div>
     </section>
@@ -68,61 +68,17 @@
                 <span class="badge pilot-badge">Ben • Age 11</span>
                 <h3>Ben: Lead Pilot & Photographer</h3>
                 <p class="card-text">My passion for this started with a love for math and practicing coding. Once I was old enough, I joined the school drone team. In my very first year of flying, I earned 4 Gold Trophies at the REC Foundation Aerial Drone Competition and made it all the way to regionals in California.</p>
-                <p class="card-text">That training taught me how to fly with total precision—keeping the aircraft perfectly steady, navigating safely through tight gaps, and capturing aerial angles that make every event and project look its absolute best. Once I got the hang of flying, I realized I could use those same technical skills to take amazing pictures from the sky.</p>
+                <p class="card-text">That training taught me how to fly with total precision—keeping the aircraft perfectly steady, navigating safely through tight gaps, and capturing aerial angles that make every event and project look its absolute best.</p>
             </div>
             <div class="card">
                 <span class="badge ops-badge">Josh • Age 9</span>
                 <h3>Josh: Operations & Editing</h3>
                 <p class="card-text">I knew I wanted to turn this idea into a real company, so I asked my brother, Josh, to tag along with me, and he was incredibly happy to join the team. To make the business a reality, we pooled our savings from a neighborhood lemonade stand to buy a professional DJI Mini 4 Pro.</p>
-                <p class="card-text">While I focus on capturing perfect shots, smooth videos, and stunning aerial footage, Josh commands our digital operations on the ground. He has a great eye for detail, transforms our raw files into polished media, handles our email replies, and keeps our schedule on track.</p>
+                <p class="card-text">While I focus on capturing perfect shots, smooth videos, and stunning aerial footage, Josh commands our digital operations on the ground. He transforms our raw files into polished media, handles our email replies, and keeps our schedule on track.</p>
             </div>
         </div>
     </section>
-        <!-- Portfolio Gallery Section Featuring Your 4 Original Showcase Slots -->
-    <section id="portfolio" class="section">
-        <h2 class="section-title">Our Featured Aerial Work</h2>
-        <p class="intro-p">Real high-grade media captured during our precision flight operations.</p>
-        
-        <div class="gallery-grid">
-            <!-- Slot 1: House -->
-            <div class="gallery-item">
-                <img src="house.jpeg" alt="Luxury House Shoot">
-                <div class="gallery-overlay">
-                    <h5>Luxury Resorts & Estates</h5>
-                    <p>A top-down overview of a hillside mansion, framing the entire footprint of the property, driveway, and pool layout for real estate portfolios.</p>
-                </div>
-            </div>
-
-            <!-- Slot 2: Los Angeles View -->
-            <div class="gallery-item">
-                <img src="losangeles.jpeg" alt="Cityscape Aerial photography">
-                <div class="gallery-overlay">
-                    <h5>Cityscapes & Commercial</h5>
-                    <p>Keeping the camera perfectly level over open water to capture the beautiful skyline and marina from an altitude that makes the city look completely cinematic.</p>
-                </div>
-            </div>
-
-            <!-- Slot 3: Lighthouse -->
-            <div class="gallery-item">
-                <img src="lighthouse.jpeg" alt="Lighthouse Flight">
-                <div class="gallery-overlay">
-                    <h5>Special Landmarks</h5>
-                    <p>I flew right into the sunset path to frame this lighthouse, catching the golden sunlight reflecting off the grass path and water.</p>
-                </div>
-            </div>
-
-            <!-- Slot 4: Boat -->
-            <div class="gallery-item">
-                <img src="boat.jpeg" alt="Maritime Property Shoot">
-                <div class="gallery-overlay">
-                    <h5>Maritime & Waterfront</h5>
-                    <p>Using tournament-precision flying to orbit this massive historical ship, getting a crisp angle that shows the giant red funnels and dockyard layout.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Drone & Tech Capabilities Sheet -->
+        <!-- The Drone & Tech Capabilities Sheet -->
     <section id="gear" class="section">
         <h2 class="section-title">The DJI Mini 4 Pro</h2>
         <div class="spec-grid">
@@ -141,7 +97,7 @@
         </div>
     </section>
 
-    <!-- Our Goal / Contact Box (Bypasses manual triggers to feed your direct tracker ID!) -->
+    <!-- Our Goal / Contact Box -->
     <section id="contact" class="section contact-box">
         <h2>Our Goal</h2>
         <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our goal is to give you awesome drone media—from weddings and commercial projects to high-end hotels and resorts—that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
@@ -164,7 +120,7 @@
         <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Saving for college, one flight at a time.</p>
     </footer>
 
-    <!-- BACKGROUND ROTATION ENGINE (3 Seconds) -->
+    <!-- BACKGROUND ROTATION SLIDER TIMING CONTROL ENGINE -->
     <script>
         const images = ['bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg', 'bg4.jpeg', 'bg5.jpeg', 'bg6.jpeg', 'bg7.jpeg', 'bg8.jpeg'];
         const container = document.getElementById('hero-carousel-container');
@@ -185,6 +141,7 @@
             elements[currentIndex].classList.add('active');
         }, 3000);
 
+        // Class List theme switcher script
         const toggleBtn = document.getElementById('theme-toggle');
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
