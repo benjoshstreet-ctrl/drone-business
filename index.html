@@ -8,24 +8,20 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar Structure -->
     <nav class="navbar">
         <div class="nav-content">
-            <!-- Your Original Clean Logo Button -->
-            <a href="#" class="brand-logo-link">
-                <div class="brand-logo-container">
-                    <div class="vector-drone-graphic">
-                        <div class="drone-body-core"></div>
-                        <div class="drone-wing-left"></div>
-                        <div class="drone-wing-right"></div>
-                        <div class="drone-prop-l"></div>
-                        <div class="drone-prop-r"></div>
-                        <div class="drone-camera-eye"></div>
-                    </div>
-                    <span class="logo-text-gradient">TheDroneBrothers.co</span>
+            <div class="brand-logo-container">
+                <div class="vector-drone-graphic">
+                    <div class="drone-body-core"></div>
+                    <div class="drone-wing-left"></div>
+                    <div class="drone-wing-right"></div>
+                    <div class="drone-prop-l"></div>
+                    <div class="drone-prop-r"></div>
+                    <div class="drone-camera-eye"></div>
                 </div>
-            </a>
-            <!-- Top Navigation Links -->
+                <span class="logo-text-gradient">TheDroneBrothers.co</span>
+            </div>
             <div class="nav-links">
                 <a href="#story">Our Story</a>
                 <a href="#team">The Crew</a>
@@ -37,7 +33,7 @@
         </div>
     </nav>
 
-    <!-- Main Title Section with Restored Badge -->
+    <!-- Main Title Section Matching Your Clean Photo -->
     <section class="hero-section">
         <div id="hero-carousel-container"></div>
         <div class="hero-overlay-darkener"></div>
@@ -47,7 +43,7 @@
             <p class="tagline">Professional aerial photography for luxury resorts, weddings, and commercial listings.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="cta-button">Book Flight</a>
-                <a href="#portfolio" class="secondary-button">See Our Work ↓</a>
+                <a href="gallery.html" class="secondary-button">See Our Work ↓</a>
             </div>
         </div>
     </section>
@@ -78,56 +74,56 @@
             </div>
         </div>
     </section>
-        <!-- Portfolio Gallery Section Featuring Clean Centered Rounded Rectangles -->
+        <!-- Our Featured Work Section - Clickable Portal Cards -->
     <section id="portfolio" class="section">
         <h2 class="section-title">Our Featured Aerial Work</h2>
-        <p class="intro-p">Real high-grade media captured during our precision flight operations.</p>
+        <p class="intro-p">Click any property card below to enter our full widescreen gallery portfolio page.</p>
         
-        <div class="clean-gallery-container">
+        <div class="clean-centered-gallery">
             
-            <!-- Item 1: House -->
-            <div class="gallery-item-card">
-                <div class="image-frame-rect">
+            <!-- Item 1: House -> Links to gallerypage -->
+            <a href="gallery.html" class="apple-rectangle-card">
+                <div class="photo-frame-rounded">
                     <img src="house.jpeg" alt="Luxury House Shoot">
                 </div>
-                <div class="caption-under-card">
-                    <h5>Luxury Resorts & Estates</h5>
+                <div class="centered-caption-under">
+                    <h5>Luxury Resorts & Estates &rarr;</h5>
                     <p>A top-down overview of a hillside mansion, framing the entire footprint of the property, driveway, and pool layout for real estate portfolios.</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Item 2: Los Angeles View -->
-            <div class="gallery-item-card">
-                <div class="image-frame-rect">
+            <!-- Item 2: Los Angeles View -> Links to gallerypage -->
+            <a href="gallery.html" class="apple-rectangle-card">
+                <div class="photo-frame-rounded">
                     <img src="losangeles.jpeg" alt="Cityscape Aerial photography">
                 </div>
-                <div class="caption-under-card">
-                    <h5>Cityscapes & Commercial</h5>
+                <div class="centered-caption-under">
+                    <h5>Cityscapes & Commercial &rarr;</h5>
                     <p>Keeping the camera perfectly level over open water to capture the beautiful skyline and marina from an altitude that makes the city look completely cinematic.</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Item 3: Lighthouse -->
-            <div class="gallery-item-card">
-                <div class="image-frame-rect">
+            <!-- Item 3: Lighthouse -> Links to gallerypage -->
+            <a href="gallery.html" class="apple-rectangle-card">
+                <div class="photo-frame-rounded">
                     <img src="lighthouse.jpeg" alt="Lighthouse Flight">
                 </div>
-                <div class="caption-under-card">
-                    <h5>Special Landmarks</h5>
+                <div class="centered-caption-under">
+                    <h5>Special Landmarks &rarr;</h5>
                     <p>I flew right into the sunset path to frame this lighthouse, catching the golden sunlight reflecting off the grass path and water.</p>
                 </div>
-            </div>
+            </a>
 
-            <!-- Item 4: Boat -->
-            <div class="gallery-item-card">
-                <div class="image-frame-rect">
+            <!-- Item 4: Boat -> Links to gallerypage -->
+            <a href="gallery.html" class="apple-rectangle-card">
+                <div class="photo-frame-rounded">
                     <img src="boat.jpeg" alt="Maritime Property Shoot">
                 </div>
-                <div class="caption-under-card">
-                    <h5>Maritime & Waterfront</h5>
+                <div class="centered-caption-under">
+                    <h5>Maritime & Waterfront &rarr;</h5>
                     <p>Using tournament-precision flying to orbit this massive historical ship, getting a crisp angle that shows the giant red funnels and dockyard layout.</p>
                 </div>
-            </div>
+            </a>
 
         </div>
     </section>
@@ -174,7 +170,7 @@
         <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Saving for college, one flight at a time.</p>
     </footer>
 
-    <!-- BACKGROUND ROTATION ENGINE (3 Seconds) -->
+    <!-- BACKGROUND ROTATION SCRIPT -->
     <script>
         const images = ['bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg', 'bg4.jpeg', 'bg5.jpeg', 'bg6.jpeg', 'bg7.jpeg', 'bg8.jpeg'];
         const container = document.getElementById('hero-carousel-container');
