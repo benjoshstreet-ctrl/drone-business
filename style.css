@@ -1,4 +1,4 @@
-/* Universal Settings Layout Framework */
+/* Universal Settings Framework Base Layout */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR STYLE */
+/* NAVBAR SYSTEM FIXED ALIGNMENTS */
 .navbar {
     background-color: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(15px);
@@ -37,7 +37,7 @@ body {
 }
 
 .brand-logo-link {
-    text-decoration: none !important; /* FORCES LOGO LINK DECORATIONS TO DISABLE */
+    text-decoration: none !important; /* HARD STOPS TEXT DECORATION LINES UNDER LOGO ENTIRELY */
     border: none !important;
     outline: none !important;
 }
@@ -98,15 +98,16 @@ body {
 .drone-prop-l { left: -5px; }
 .drone-prop-r { right: -5px; }
 
+/* ABSOLUTELY SICK CUSTOM APPLE TIRED GRADIENT LOGO STYLING PANELS (BLACK-TO-BLUE-TO-WHITE) */
 .logo-text-gradient {
     font-size: 17px;
     font-weight: 800;
     letter-spacing: -0.02em;
-    background: linear-gradient(90deg, #ffffff 0%, #2997ff 100%);
+    background: linear-gradient(135deg, #050505 0%, #0071e3 50%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    text-decoration: none !important; /* STOPS THE BLUE UNDER-LINE COMPLETELY */
+    text-decoration: none !important; /* HARD LOCKS DELETION OF ANY UNDERLINE LINES */
 }
 
 .nav-links { display: flex; align-items: center; }
@@ -190,7 +191,7 @@ body {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Structural Content Panels */
+/* Structural Base Panels */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
@@ -198,7 +199,7 @@ body {
 .story-text { font-size: 16px; color: #1d1d1f; transition: color 0.4s; }
 .intro-p { font-size: 18px; color: #515154; text-align: center; max-width: 750px; margin: 0 auto 40px auto; transition: color 0.4s; }
 
-/* Crew Cards */
+/* Crew Cards Alignment Panels */
 .card-grid { display: flex; gap: 30px; }
 .card { background-color: #ffffff; border-radius: 22px; padding: 40px; flex: 1; border: 1px solid rgba(0, 0, 0, 0.05); transition: background-color 0.4s; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; }
@@ -207,12 +208,11 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* REESTABLISHED THE MASTER CENTERED ROUNDED RECTANGLE OVERHAUL PACK (MASSIVE DESKTOP SIZE) */
-.gallery-card-anchor {
-    text-decoration: none !important;
-    display: block;
-    width: 100%;
-}
+/* 
+   HOMEPAGE FRAME ENGINE: PERFECTLY CENTERED ROUNDED RECTANGLES
+   This handles the 4 main homepage vertical display panels cleanly.
+*/
+.gallery-card-anchor { text-decoration: none !important; display: block; width: 100%; }
 
 .gallery-grid {
     display: flex !important;
@@ -220,7 +220,7 @@ body {
     align-items: center !important;
     gap: 64px !important;
     width: 100% !important;
-    max-width: 950px !important; /* RAISES DESKTOP WIDTH SPECIFICATIONS */
+    max-width: 850px !important;
     margin: 0 auto !important;
 }
 
@@ -235,48 +235,105 @@ body {
     overflow: visible !important;
 }
 
-/* This forces your photos to render as large rounded rectangles */
 .gallery-item img {
     width: 100% !important;
-    height: 520px !important; /* PUSHES DEPTH HIGHER FOR COMPUTER MONITORS */
+    height: 480px !important;
     object-fit: cover !important;
-    border-radius: 24px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important; /* CRITICAL TIMING FOR THE HOVER ZOOM physics */
+    border-radius: 24px !important; /* Locks rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 
-/* 4. HOVER ZOOM IMPLEMENTATION TRIGGER PANEL */
+/* GENTLE HOVER ZOOM TIMING CONFIGURATION MATRIX */
 .gallery-card-anchor:hover .gallery-item img {
-    transform: scale(1.025) !important; /* GENTLE MICRO ZOOM DETECT COORDINATES */
+    transform: scale(1.025) !important; /* Elegant Apple-tier scaling zoom */
 }
 
-/* Strips old overlay overlays and centers captions below cards */
+/* Centers ALL typography labels perfectly directly under image assets cards */
 .gallery-overlay {
     position: static !important;
-    text-align: center !important;
+    text-align: center !important; /* FORCES ALL LABELS (INCLUDING BOAT DESCRIPTION) TO STAY PERFECTLY CENTERED */
     width: 100% !important;
-    max-width: 700px !important;
-    margin-top: 22px !important;
+    max-width: 650px !important;
+    margin-top: 20px !important;
     padding: 0 16px !important;
     background: none !important;
     color: #1d1d1f !important;
 }
 
-.gallery-overlay h5 {
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    color: #0b2545 !important;
-    margin-bottom: 8px !important;
-    letter-spacing: -0.01em !important;
+.gallery-overlay h5 { font-size: 22px !important; font-weight: 700 !important; color: #0b2545 !important; margin-bottom: 8px !important; letter-spacing: -0.01em !important; }
+.gallery-overlay p { font-size: 15px !important; color: #515154 !important; line-height: 1.5 !important; }
+
+/* 
+   ========================================================================
+   SUBPAGE PORTFOLIO SYSTEM DESIGN SHEET PANEL RULES (THE 12-PHOTO 3x3 MATRIX)
+   ========================================================================
+*/
+.subpage-header-hero { padding-top: 140px; text-align: center; max-width: 1024px; margin: 0 auto; }
+
+.gallery-matrix-viewport {
+    max-width: 1024px;
+    margin: 40px auto 100px auto;
+    padding: 0 24px;
 }
 
-.gallery-overlay p {
-    font-size: 15px !important;
-    color: #515154 !important;
-    line-height: 1.5 !important;
+.photo-grid-scroll-matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FORCES THE PERFECT 3-COLUMN LAYOUT MATRIX BLOCK SETUP */
+    gap: 20px;
 }
 
-/* Specs and Booking Form Layouts */
+.subpage-grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+}
+
+.asset-frame-rect {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Crisp square rectangle bounding borders */
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+}
+
+.asset-frame-rect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Subpage Hover Zoom Physics Linker */
+.subpage-grid-card:hover .asset-frame-rect img {
+    transform: scale(1.035);
+}
+
+.asset-text-label {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.asset-text-label h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d1d1f;
+    transition: color 0.4s ease;
+}
+
+/* POP-UP VIEWERS ENLARGEMENT PANELS LIGHTBOX STYLING CONFIG */
+.lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.92); backdrop-filter: blur(15px); display: flex; align-items: center; justify-content: center; z-index: 2000; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+.lightbox-overlay.visible { opacity: 1; pointer-events: auto; }
+.lightbox-window-content { max-width: 85%; max-height: 80vh; }
+.lightbox-window-content img { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+.lightbox-close-btn { position: absolute; top: 24px; right: 24px; background: none; border: none; color: #ffffff; font-size: 44px; cursor: pointer; opacity: 0.6; }
+.lightbox-close-btn:hover { opacity: 1; }
+.lightbox-nav-btn { position: absolute; background: none; border: none; color: #ffffff; font-size: 44px; cursor: pointer; padding: 20px; opacity: 0.4; }
+.lightbox-nav-btn:hover { opacity: 1; } .prev-btn { left: 16px; } .next-btn { right: 16px; }
+
+/* Specs and Booking Layout Panels */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
@@ -289,29 +346,31 @@ body {
 .input-group { margin-bottom: 20px; }
 .booking-form input, .booking-form textarea { width: 100%; padding: 14px 18px; border-radius: 12px; border: 2px solid rgba(255, 255, 255, 0.2); background-color: rgba(255, 255, 255, 0.1); color: #ffffff; font-size: 16px; }
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
-footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
+footer, .minimalist-brand-footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* THE ACTIVE DARK MODE ENGINE */
+/* THE DEDICATED THEME CONVERSION ENGINE OVERRIDES */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
 body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
 body.dark-mode .section-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
-body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .gallery-overlay h5 { color: #ffffff !important; }
+body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .gallery-overlay h5, body.dark-mode .asset-text-label h5 { color: #ffffff !important; }
 body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-overlay p { color: #c9d1d9 !important; }
 
-/* 3. MOBILE MOBILE VIEW ALIGNMENT CONFIG MATRIX RULES */
+/* Mobile Adaptations Engine Fold Layout Matrix */
 @media screen and (max-width: 768px) {
     .nav-content { flex-direction: column; gap: 12px; padding: 12px 16px; }
     .nav-links { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
     .nav-links a { font-size: 12px; margin-left: 0; padding: 4px 6px; }
     
-    /* SHIFTS HERO PORTAL MATRIX CLOSER TO THE UPPER SIDE COORD LINES */
     .hero-section { height: 60vh !important; }
     .hero-content-box { margin-top: -40px !important; }
+    .hero-section h1 { font-size: 34px; }
+    .tagline { font-size: 16px; }
     
-    .hero-section h1 { font-size: 32px; }
-    .tagline { font-size: 15px; }
-    .card-grid, .gallery-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
+    .card-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
+    
+    /* Responsive adjustment for subpage photo grids on mobile glass */
+    .photo-grid-scroll-matrix { grid-template-columns: repeat(2, 1fr) !important; gap: 12px; }
     
     .gallery-item img { height: 260px !important; border-radius: 16px !important; }
     .gallery-overlay h5 { font-size: 19px !important; }
