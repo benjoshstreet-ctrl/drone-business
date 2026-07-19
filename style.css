@@ -1,4 +1,4 @@
-/* Universal Settings Layout Framework */
+/* Universal Settings Framework */
 * {
     margin: 0;
     padding: 0;
@@ -134,7 +134,7 @@ body {
     margin-left: 24px;
 }
 
-/* Background Photo Carousel Panel Box */
+/* Background Carousel Engine */
 .hero-section {
     position: relative;
     height: 85vh;
@@ -200,63 +200,69 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* BACKWARD COMPATIBILITY MATRIX MAP FOR OLD GRID OVERRIDES */
-.gallery-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 56px !important;
-    width: 100% !important;
-    max-width: 800px !important;
-    margin: 0 auto !important;
+/* HARD-LOCKED PERFECTLY CENTERED ROUNDED RECTANGLE WORK ITEMS */
+.clean-centered-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.gallery-item {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    height: auto !important;
-    background: none !important;
-    border: none !important;
-    overflow: visible !important;
+.apple-rectangle-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
 }
 
-/* FORCES PHOTO BLOCKS INTO ROUNDED RECTANGLES MAPPED FROM SCREENSHOT */
-.gallery-item img {
-    width: 100% !important;
-    height: 450px !important;
-    object-fit: cover !important;
-    border-radius: 24px !important; /* Premium rounded look */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+.photo-frame-rounded {
+    width: 100%;
+    height: 450px;
+    border-radius: 24px; /* Clean premium rounded layout */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-/* CENTERED APPLE CAPTIONS SITTING UNDERNEATH CARDS DIRECTLY */
-.gallery-overlay {
-    position: static !important;
-    text-align: center !important;
-    max-width: 650px !important;
-    margin-top: 20px !important;
-    padding: 0 16px !important;
-    background: none !important;
-    color: #1d1d1f !important;
+.photo-frame-rounded img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.gallery-overlay h5 {
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    color: #0b2545 !important;
-    margin-bottom: 8px !important;
-    letter-spacing: -0.01em !important;
+.apple-rectangle-card:hover .photo-frame-rounded img {
+    transform: scale(1.02);
 }
 
-.gallery-overlay p {
-    font-size: 15px !important;
-    color: #515154 !important;
-    line-height: 1.5 !important;
+/* Beautiful Centered Typography Directly Underneath Cards */
+.centered-caption-under {
+    text-align: center;
+    max-width: 650px;
+    margin-top: 20px;
+    padding: 0 16px;
 }
 
-/* Specs and Booking Form Layouts */
+.centered-caption-under h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b2545;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+    transition: color 0.4s ease;
+}
+
+.centered-caption-under p {
+    font-size: 15px;
+    color: #515154;
+    line-height: 1.5;
+    transition: color 0.4s ease;
+}
+
+/* Specs and Booking Forms */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
@@ -276,8 +282,8 @@ body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
 body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
 body.dark-mode .section-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
-body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .gallery-overlay h5 { color: #ffffff !important; }
-body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-overlay p { color: #c9d1d9 !important; }
+body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .centered-caption-under h5 { color: #ffffff; }
+body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .centered-caption-under p { color: #c9d1d9; }
 
 /* Mobile Adaptations */
 @media screen and (max-width: 768px) {
@@ -288,7 +294,7 @@ body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-o
     .tagline { font-size: 16px; }
     .card-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
     
-    .gallery-item img { height: 250px !important; border-radius: 16px !important; }
-    .gallery-overlay h5 { font-size: 19px !important; }
-    .gallery-overlay p { font-size: 13px !important; }
+    .photo-frame-rounded { height: 250px; border-radius: 16px; }
+    .centered-caption-under h5 { font-size: 19px; }
+    .centered-caption-under p { font-size: 13px; }
 }
