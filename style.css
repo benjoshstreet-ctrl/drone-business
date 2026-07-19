@@ -14,7 +14,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR STYLE - THE UNDER-LOGO BLUE LINE IS REMOVED ENTIRELY */
+/* NAVBAR STYLE */
 .navbar {
     background-color: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(15px);
@@ -23,9 +23,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    /* Hard-disabled to completely eliminate the border line beneath your navigation */
     border-bottom: none !important;
-    box-shadow: none !important;
     transition: background-color 0.4s ease;
 }
 
@@ -36,6 +34,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
+}
+
+.brand-logo-link {
+    text-decoration: none !important; /* FORCES LOGO LINK DECORATIONS TO DISABLE */
+    border: none !important;
+    outline: none !important;
 }
 
 .brand-logo-container {
@@ -102,6 +106,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    text-decoration: none !important; /* STOPS THE BLUE UNDER-LINE COMPLETELY */
 }
 
 .nav-links { display: flex; align-items: center; }
@@ -136,7 +141,7 @@ body {
     margin-left: 24px;
 }
 
-/* Background Photo Slider Framework */
+/* Background Carousel Engine */
 .hero-section {
     position: relative;
     height: 85vh;
@@ -185,7 +190,7 @@ body {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Structural Content Base Panels */
+/* Structural Content Panels */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
@@ -202,17 +207,20 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* 
-   MASTER LAYOUT ARCHITECTURE: PERFECTLY CENTERED ROUNDED RECTANGLES
-   This forces your old gallery tags to completely restructure into an Apple look grid panel.
-*/
+/* REESTABLISHED THE MASTER CENTERED ROUNDED RECTANGLE OVERHAUL PACK (MASSIVE DESKTOP SIZE) */
+.gallery-card-anchor {
+    text-decoration: none !important;
+    display: block;
+    width: 100%;
+}
+
 .gallery-grid {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     gap: 64px !important;
     width: 100% !important;
-    max-width: 850px !important;
+    max-width: 950px !important; /* RAISES DESKTOP WIDTH SPECIFICATIONS */
     margin: 0 auto !important;
 }
 
@@ -227,27 +235,28 @@ body {
     overflow: visible !important;
 }
 
-/* This targets the images directly, converting them into rounded rectangles */
+/* This forces your photos to render as large rounded rectangles */
 .gallery-item img {
     width: 100% !important;
-    height: 480px !important; /* Premium rectangle depth aspect ratios */
+    height: 520px !important; /* PUSHES DEPTH HIGHER FOR COMPUTER MONITORS */
     object-fit: cover !important;
-    border-radius: 24px !important; /* Locks custom rounded look corners */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important; /* CRITICAL TIMING FOR THE HOVER ZOOM physics */
 }
 
-.gallery-item:hover img {
-    transform: scale(1.015) !important;
+/* 4. HOVER ZOOM IMPLEMENTATION TRIGGER PANEL */
+.gallery-card-anchor:hover .gallery-item img {
+    transform: scale(1.025) !important; /* GENTLE MICRO ZOOM DETECT COORDINATES */
 }
 
-/* Strips old overlay colors and centers your text perfectly directly below the image frames */
+/* Strips old overlay overlays and centers captions below cards */
 .gallery-overlay {
     position: static !important;
     text-align: center !important;
     width: 100% !important;
-    max-width: 650px !important;
-    margin-top: 20px !important;
+    max-width: 700px !important;
+    margin-top: 22px !important;
     padding: 0 16px !important;
     background: none !important;
     color: #1d1d1f !important;
@@ -259,17 +268,15 @@ body {
     color: #0b2545 !important;
     margin-bottom: 8px !important;
     letter-spacing: -0.01em !important;
-    transition: color 0.4s ease !important;
 }
 
 .gallery-overlay p {
     font-size: 15px !important;
     color: #515154 !important;
     line-height: 1.5 !important;
-    transition: color 0.4s ease !important;
 }
 
-/* Specs and Booking Form Grid Panels */
+/* Specs and Booking Form Layouts */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
@@ -284,22 +291,26 @@ body {
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
 footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* THE ACTIVE DARK THEME VARIABLE OVERRIDES DIAL MASTER ENGINE */
+/* THE ACTIVE DARK MODE ENGINE */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
-/* Hard locks the navbar to stay borderless and clean on dark settings */
 body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
 body.dark-mode .section-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
 body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .gallery-overlay h5 { color: #ffffff !important; }
 body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-overlay p { color: #c9d1d9 !important; }
 
-/* Mobile Adaptations Viewports Matrix */
+/* 3. MOBILE MOBILE VIEW ALIGNMENT CONFIG MATRIX RULES */
 @media screen and (max-width: 768px) {
     .nav-content { flex-direction: column; gap: 12px; padding: 12px 16px; }
     .nav-links { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
     .nav-links a { font-size: 12px; margin-left: 0; padding: 4px 6px; }
-    .hero-section h1 { font-size: 34px; }
-    .tagline { font-size: 16px; }
+    
+    /* SHIFTS HERO PORTAL MATRIX CLOSER TO THE UPPER SIDE COORD LINES */
+    .hero-section { height: 60vh !important; }
+    .hero-content-box { margin-top: -40px !important; }
+    
+    .hero-section h1 { font-size: 32px; }
+    .tagline { font-size: 15px; }
     .card-grid, .gallery-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
     
     .gallery-item img { height: 260px !important; border-radius: 16px !important; }
