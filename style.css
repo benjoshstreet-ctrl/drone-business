@@ -1,4 +1,4 @@
-/* Universal Settings Framework */
+/* Universal Settings Layout Framework */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR STYLE - ZERO BORDER LINE UNDER LOGO ENTIRELY */
+/* NAVBAR STYLE - THE BLUE BOTTOM BORDER LINE IS ENTIRELY REMOVED HERE */
 .navbar {
     background-color: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(15px);
@@ -23,7 +23,9 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    /* This completely disables the line under your drone logo and links */
     border-bottom: none !important;
+    box-shadow: none !important;
     transition: background-color 0.4s ease;
 }
 
@@ -183,7 +185,7 @@ body {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Structural Content Panels */
+/* Structural Content Panels Frameworks */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
@@ -191,7 +193,7 @@ body {
 .story-text { font-size: 16px; color: #1d1d1f; transition: color 0.4s; }
 .intro-p { font-size: 18px; color: #515154; text-align: center; max-width: 750px; margin: 0 auto 40px auto; transition: color 0.4s; }
 
-/* Crew Cards */
+/* Biography Crew Cards Layout sheets */
 .card-grid { display: flex; gap: 30px; }
 .card { background-color: #ffffff; border-radius: 22px; padding: 40px; flex: 1; border: 1px solid rgba(0, 0, 0, 0.05); transition: background-color 0.4s; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; }
@@ -200,69 +202,67 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* HARD-LOCKED PERFECTLY CENTERED ROUNDED RECTANGLE WORK ITEMS */
-.clean-centered-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+/* 
+   MASTER LAYOUT RESET FOR CENTERED ROUNDED RECTANGLE CARDS
+   This forces your old gallery tags to center and shape exactly right!
+*/
+.gallery-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 64px !important;
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
 }
 
-.apple-rectangle-card {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    cursor: pointer;
+.gallery-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: auto !important;
+    background: none !important;
+    border: none !important;
+    overflow: visible !important;
 }
 
-.photo-frame-rounded {
-    width: 100%;
-    height: 450px;
-    border-radius: 24px; /* Clean premium rounded layout */
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+/* This forces your photos to render as rounded rectangles */
+.gallery-item img {
+    width: 100% !important;
+    height: 480px !important;
+    object-fit: cover !important;
+    border-radius: 24px !important; /* Locks rounded layout corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
 }
 
-.photo-frame-rounded img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+/* This targets the text boxes and centers them cleanly underneath the images */
+.gallery-overlay {
+    position: static !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 650px !important;
+    margin-top: 20px !important;
+    padding: 0 16px !important;
+    background: none !important;
+    color: #1d1d1f !important;
 }
 
-.apple-rectangle-card:hover .photo-frame-rounded img {
-    transform: scale(1.02);
+.gallery-overlay h5 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #0b2545 !important;
+    margin-bottom: 8px !important;
+    letter-spacing: -0.01em !important;
 }
 
-/* Beautiful Centered Typography Directly Underneath Cards */
-.centered-caption-under {
-    text-align: center;
-    max-width: 650px;
-    margin-top: 20px;
-    padding: 0 16px;
+.gallery-overlay p {
+    font-size: 15px !important;
+    color: #515154 !important;
+    line-height: 1.5 !important;
 }
 
-.centered-caption-under h5 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b2545;
-    margin-bottom: 8px;
-    letter-spacing: -0.01em;
-    transition: color 0.4s ease;
-}
-
-.centered-caption-under p {
-    font-size: 15px;
-    color: #515154;
-    line-height: 1.5;
-    transition: color 0.4s ease;
-}
-
-/* Specs and Booking Forms */
+/* Specs and Booking Form Layout Panels */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
@@ -277,24 +277,25 @@ body {
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
 footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* THE ACTIVE DARK MODE SYSTEM INVERSION VARIABLE MATRIX */
+/* THE ACTIVE DARK THEME INTERFACE MODES SYSTEM MATRICES */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
+/* This hard locks the navbar to stay borderless and transparent on dark mode */
 body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
 body.dark-mode .section-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
-body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .centered-caption-under h5 { color: #ffffff; }
-body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .centered-caption-under p { color: #c9d1d9; }
+body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .gallery-overlay h5 { color: #ffffff !important; }
+body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-overlay p { color: #c9d1d9 !important; }
 
-/* Mobile Adaptations */
+/* Mobile Adaptations System Matrices Layout */
 @media screen and (max-width: 768px) {
     .nav-content { flex-direction: column; gap: 12px; padding: 12px 16px; }
     .nav-links { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
     .nav-links a { font-size: 12px; margin-left: 0; padding: 4px 6px; }
     .hero-section h1 { font-size: 34px; }
     .tagline { font-size: 16px; }
-    .card-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
+    .card-grid, .gallery-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
     
-    .photo-frame-rounded { height: 250px; border-radius: 16px; }
-    .centered-caption-under h5 { font-size: 19px; }
-    .centered-caption-under p { font-size: 13px; }
+    .gallery-item img { height: 260px !important; border-radius: 16px !important; }
+    .gallery-overlay h5 { font-size: 19px !important; }
+    .gallery-overlay p { font-size: 13px !important; }
 }
