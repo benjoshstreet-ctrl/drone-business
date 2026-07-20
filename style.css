@@ -11,21 +11,18 @@ body {
     background-color: #f5f5f7;
     color: #1d1d1f;
     line-height: 1.6;
-    /* CRITICAL LOCK: Stops the page from ever stretching out or scrolling sideways for miles! */
+    /* CRITICAL FRAME LOCK: Prevents the layout from ever stretching out or scrolling sideways */
     overflow-x: hidden !important;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* NAVBAR SYSTEM FIXED TRANSPARENT LOOK */
+/* NAVBAR STYLE - HARD-LOCKED TO A SOLID PREMIUM BLACK STRIP ON BOTH CONFIGS */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background-color: #000000 !important;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    /* Hard-disabled to completely eliminate the border line beneath your navigation logo */
     border-bottom: none !important;
     box-shadow: none !important;
     transition: background-color 0.4s ease;
@@ -103,7 +100,7 @@ body {
 .drone-prop-l { left: -5px; }
 .drone-prop-r { right: -5px; }
 
-/* ABSOLUTELY SICK APPLE-GRADE LOGO GRADIENT DESIGN (BLACK-TO-BLUE-TO-WHITE) */
+/* ABSOLUTELY SICK GRADIENT BRANDING LOGO (BLACK-TO-BLUE-TO-WHITE) */
 .logo-text-gradient {
     font-size: 17px;
     font-weight: 800;
@@ -112,7 +109,7 @@ body {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     display: inline-block;
-    text-decoration: none !important; /* HARD LOCKS DELETION OF ANY UNDERLINE LINES */
+    text-decoration: none !important;
 }
 
 .nav-links { display: flex; align-items: center; }
@@ -145,6 +142,14 @@ body {
     font-weight: 600;
     cursor: pointer;
     margin-left: 24px;
+}
+
+/* 6. MECHANICAL BUTTON COMPRESSION PHYSICS INTERFACES */
+.bouncable-btn {
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+.bouncable-btn:active {
+    transform: scale(0.96) !important; /* Premium tactile compression press feel when clicked! */
 }
 
 /* Background Carousel Engine */
@@ -196,7 +201,6 @@ body {
 .cta-button:hover { transform: scale(1.02); }
 .secondary-button { display: inline-block; color: #2997ff; font-size: 16px; font-weight: 500; padding: 14px 20px; text-decoration: none; }
 
-/* Structural Content Panels */
 .section { max-width: 1024px; margin: 0 auto; padding: 90px 24px; }
 .section-title { font-size: 38px; font-weight: 700; text-align: center; margin-bottom: 30px; color: #0b2545; transition: color 0.4s; }
 .story-box { max-width: 750px; margin: 0 auto; background-color: #ffffff; padding: 40px; border-radius: 20px; border: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
@@ -204,7 +208,6 @@ body {
 .story-text { font-size: 16px; color: #1d1d1f; transition: color 0.4s; }
 .intro-p { font-size: 18px; color: #515154; text-align: center; max-width: 750px; margin: 0 auto 40px auto; transition: color 0.4s; }
 
-/* Crew Biography Cards */
 .card-grid { display: flex; gap: 30px; }
 .card { background-color: #ffffff; border-radius: 22px; padding: 40px; flex: 1; border: 1px solid rgba(0, 0, 0, 0.05); transition: background-color 0.4s; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; }
@@ -213,7 +216,6 @@ body {
 .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0b2545; transition: color 0.4s; }
 .card-text { font-size: 15px; color: #515154; margin-bottom: 16px; transition: color 0.4s; }
 
-/* HOMEPAGE FRAMEWORK: PERFECT CENTERED ROUNDED RECTANGLE CORES */
 .gallery-card-anchor { text-decoration: none !important; display: block; width: 100%; }
 
 .gallery-grid {
@@ -222,7 +224,7 @@ body {
     align-items: center !important;
     gap: 64px !important;
     width: 100% !important;
-    max-width: 850px !important;
+    max-width: 950px !important;
     margin: 0 auto !important;
 }
 
@@ -237,22 +239,27 @@ body {
     overflow: visible !important;
 }
 
+.home-photo-wrapper-rounded {
+    width: 100% !important;
+    height: 520px !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+}
+
 .gallery-item img {
     width: 100% !important;
-    height: 480px !important;
+    height: 100% !important;
     object-fit: cover !important;
-    border-radius: 24px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 .gallery-card-anchor:hover .gallery-item img { transform: scale(1.025) !important; }
 
-/* HARD-LOCKED PERFECT CENTERING UNDERLAY CARDS FOR ALL ITEMS (INCLUDING BOAT) */
 .gallery-overlay {
     position: static !important;
-    text-align: center !important; /* FORCES TOTAL CENTERING SYMMETRY */
+    text-align: center !important;
     width: 100% !important;
-    max-width: 650px !important;
+    max-width: 700px !important;
     margin-top: 20px !important;
     padding: 0 16px !important;
     background: none !important;
@@ -261,13 +268,8 @@ body {
 .gallery-overlay h5 { font-size: 22px !important; font-weight: 700 !important; color: #0b2545 !important; margin-bottom: 8px !important; letter-spacing: -0.01em !important; }
 .gallery-overlay p { font-size: 15px !important; color: #515154 !important; line-height: 1.5 !important; }
 
-/* 
-   ===================================================================
-   THE BRAND-NEW CLEAN 3x4 SUBPAGE PHOTO MATRIX ENGINE CONTROLS
-   ===================================================================
-*/
 .gallery-clean-hero-title {
-    padding-top: 130px;
+    padding-top: 150px;
     text-align: center;
     width: 100%;
 }
@@ -287,7 +289,6 @@ body {
     width: 100%;
 }
 
-/* FORCES THE FLAWLESS 3-COLUMN SCROLLING GRID SHEET MATRIX */
 .clean-grid-3x4 {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -298,14 +299,14 @@ body {
 .matrix-grid-card-asset {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1; /* Crisp square geometry blocks */
+    aspect-ratio: 1 / 1;
     cursor: pointer;
 }
 
 .asset-rounded-rectangle-box {
     width: 100%;
     height: 100%;
-    border-radius: 20px !important; /* Clean rounded edges blueprint */
+    border-radius: 20px !important;
     overflow: hidden !important;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
 }
@@ -316,21 +317,16 @@ body {
     object-fit: cover !important;
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
-
-/* Hover Zoom Physics Matrix */
-.matrix-grid-card-asset:hover .asset-rounded-rectangle-box img {
-    transform: scale(1.035) !important;
-}
+.matrix-grid-card-asset:hover .asset-rounded-rectangle-box img { transform: scale(1.035) !important; }
 
 .hover-expand-hint-badge {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.25); display: flex; align-items: center;
     justify-content: center; opacity: 0; border-radius: 20px; transition: opacity 0.3s ease;
 }
-.hover-expand-hint-badge span { color: #ffffff; font-size: 12px; font-weight: 500; background-color: rgba(0, 0, 0, 0.5); padding: 4px 12px; border-radius: 20px; backdrop-filter: blur(5px); }
+.hover-expand-hint-badge span { color: #ffffff; font-size: 12px; font-weight: 500; background-color: rgba(0, 0, 0, 0.65); padding: 6px 14px; border-radius: 20px; backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.1); }
 .matrix-grid-card-asset:hover .hover-expand-hint-badge { opacity: 1; }
 
-/* POP-UP OVERLAY PRESENTATION MATRICES STYLING CONTROLS */
 .lightbox-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.92); backdrop-filter: blur(15px); display: flex; align-items: center; justify-content: center; z-index: 2000; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
 .lightbox-overlay.visible { opacity: 1; pointer-events: auto; }
 .lightbox-window-content { max-width: 85%; max-height: 80vh; }
@@ -340,7 +336,6 @@ body {
 .lightbox-nav-btn { position: absolute; background: none; border: none; color: #ffffff; font-size: 44px; cursor: pointer; padding: 20px; opacity: 0.4; }
 .lightbox-nav-btn:hover { opacity: 1; } .prev-btn { left: 16px; } .next-btn { right: 16px; }
 
-/* Specs and Booking Form Layouts */
 .spec-grid { display: flex; gap: 20px; }
 .spec-box { flex: 1; background-color: #ffffff; padding: 24px; border-radius: 16px; text-align: center; border-top: 3px solid #0071e3; border-left: 1px solid rgba(0,0,0,0.05); border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); transition: background-color 0.4s; }
 .spec-box h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0b2545; transition: color 0.4s; }
@@ -355,22 +350,33 @@ body {
 .booking-form .large-btn { width: 100%; border: none; cursor: pointer; margin-top: 10px; }
 footer, .minimalist-brand-footer { background-color: #000000; color: #86868b; text-align: center; padding: 30px 20px; font-size: 13px; }
 
-/* THE ACTIVE DARK MODE STYLING TUNER OVERRIDES */
 body.dark-mode { background-color: #0d1117; color: #f0f6fc; }
-body.dark-mode .navbar { background-color: rgba(0, 0, 0, 0.25) !important; border-bottom: none !important; }
+body.dark-mode .navbar { background-color: #000000 !important; border-bottom: none !important; }
 body.dark-mode .section-title, body.dark-mode .master-gallery-title { color: #58a6ff; }
 body.dark-mode .story-box, body.dark-mode .card, body.dark-mode .spec-box { background-color: #161b22; border-color: #30363d; }
 body.dark-mode .story-text, body.dark-mode .card h3, body.dark-mode .spec-box h4, body.dark-mode .gallery-overlay h5 { color: #ffffff !important; }
 body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-overlay p { color: #c9d1d9 !important; }
 
-/* ======================================================================
-   MOBILE DISPLAY SCALE OPTIMIZATION MATRIX (PULLED CLOSER TO THE TOP)
-   ====================================================================== */
 @media screen and (max-width: 768px) {
     .nav-content { flex-direction: column; gap: 12px; padding: 12px 16px; }
     .nav-links { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
     .nav-links a { font-size: 12px; margin-left: 0; padding: 4px 6px; }
     
-    /* PULLS THE MAIN HEADER SECTION CONTENT CLEANLY UPWARDS INSIDE MOBILE PORTALS */
     .hero-section { height: 55vh !important; }
-    .hero-content-box { margin-top: -60px !important; }
+    .hero-content-box { margin-top: -65px !important; }
+    .hero-section h1 { font-size: 34px; }
+    .tagline { font-size: 16px; }
+    
+    .clean-grid-3x4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    .gallery-clean-hero-title { padding-top: 135px; }
+    .master-gallery-title { font-size: 32px; }
+    .gallery-viewport-matrix-grid { padding: 0 12px; margin-top: 24px; }
+
+    .card-grid, .gallery-grid, .spec-grid { display: flex; flex-direction: column; gap: 20px; }
+    .gallery-item img { height: 260px !important; border-radius: 16px !important; }
+    .gallery-overlay h5 { font-size: 19px !important; }
+    .gallery-overlay p { font-size: 13px !important; }
+}
