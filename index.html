@@ -64,162 +64,32 @@
 
     <section id="team" class="section bg-cards">
         <h2 class="section-title">Meet the Crew</h2>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 40px; max-width: 900px; margin: 0 auto;">
+        <div class="card-grid">
             
-            <!-- Custom Colored Sketch Championship Artwork Frame (Pure Code Pixel Array Drawing) -->
-            <div style="width: 100%; max-width: 550px; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.08); border: 3.5px solid #0b2545; background-color: white; display: flex; justify-content: center;">
-                                <svg width="100%" height="auto" viewBox="0 0 600 500" style="display: block; max-width: 100%; border-radius: 20px;">
-                    <defs>
-                        <!-- Shading Matrices and Colored Textures Layouts -->
-                        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#cbd5e1" />
-                            <stop offset="100%" stop-color="#94a3b8" />
-                        </linearGradient>
-                        <linearGradient id="benShirt" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#1e40af" />
-                            <stop offset="50%" stop-color="#3b82f6" />
-                            <stop offset="100%" stop-color="#1d4ed8" />
-                        </linearGradient>
-                        <linearGradient id="joshShirt" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#94a3b8" />
-                            <stop offset="100%" stop-color="#475569" />
-                        </linearGradient>
-                        <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#1e293b" />
-                            <stop offset="40%" stop-color="#0f172a" />
-                            <stop offset="100%" stop-color="#334155" />
-                        </linearGradient>
-                        <linearGradient id="trophyAccent" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stop-color="#4ade80" />
-                            <stop offset="100%" stop-color="#16a34a" />
-                        </linearGradient>
-                        <filter id="pencilSketch" x="-10%" y="-10%" width="120%" height="120%">
-                            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
-                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
-                        </filter>
-                    </defs>
-
-                    <!-- Background Layout Code Panel Layer -->
-                    <rect width="600" height="500" fill="url(#skyGrad)" filter="url(#pencilSketch)" />
-                    <path d="M 0 380 Q 150 340 300 370 T 600 350 L 600 500 L 0 500 Z" fill="#64748b" opacity="0.4" />
-                    <circle cx="300" cy="180" r="160" fill="#f8fafc" opacity="0.15" />
-
-                    <!-- BEN'S BODY LAYOUT CODE (LEFT SIDE) -->
-                    <g filter="url(#pencilSketch)">
-                        <path d="M 80 500 C 80 430 110 330 190 330 C 250 330 280 420 280 500 Z" fill="url(#benShirt)" />
-                        <!-- Vest Line Overlays -->
-                        <path d="M 140 330 L 150 500 M 210 330 L 195 500" stroke="#172554" stroke-width="2.5" fill="none" />
-                        <path d="M 120 380 Q 150 400 180 380" stroke="#60a5fa" stroke-width="2" fill="none" opacity="0.6" />
-                        <circle cx="135" cy="410" r="8" fill="#1e3a8a" />
-                        <polygon points="132,410 138,405 138,415" fill="#facc15" />
-
-                        <!-- Neck Alignment Row -->
-                        <path d="M 165 340 L 165 290 L 195 290 L 195 340 Z" fill="#fbc490" />
-                        <path d="M 165 315 Q 180 335 195 315" fill="#e2a275" opacity="0.4" />
-
-                        <!-- Ben's Facial Structural Shading Matrix -->
-                        <path d="M 140 220 C 140 160 150 130 180 130 C 210 130 220 160 220 220 C 220 265 210 285 180 285 C 150 285 140 265 140 220 Z" fill="#fbc490" />
-                        <!-- Ears Row -->
-                        <circle cx="138" cy="215" r="9" fill="#e2a275" />
-                        <circle cx="222" cy="215" r="9" fill="#e2a275" />
-
-                        <!-- BEN'S HAIR RULES LINE CODE -->
-                        <path d="M 136 210 Q 140 120 180 120 Q 220 120 224 210 Q 210 145 180 145 Q 150 145 136 210 Z" fill="#d97706" />
-                        <path d="M 138 175 Q 155 140 180 160 Q 200 140 222 175 Q 180 135 138 175 Z" fill="#b45309" />
-                        <path d="M 145 155 Q 180 135 215 155" stroke="#78350f" stroke-width="1.5" fill="none" />
-
-                        <!-- Eye Configurations -->
-                        <ellipse cx="163" cy="205" rx="5" ry="3.5" fill="#ffffff" stroke="#4a3728" stroke-width="1.5" />
-                        <circle cx="163" cy="205" r="2.5" fill="#1e293b" />
-                        <ellipse cx="197" cy="205" rx="5" ry="3.5" fill="#ffffff" stroke="#4a3728" stroke-width="1.5" />
-                        <circle cx="197" cy="205" r="2.5" fill="#1e293b" />
-                        <path d="M 153 195 Q 163 190 171 196 M 189 196 Q 197 190 207 195" stroke="#4a3728" stroke-width="2.5" fill="none" />
-
-                        <!-- Smile Matrices -->
-                        <path d="M 158 245 Q 180 265 202 245" stroke="#4a3728" stroke-width="3" fill="none" />
-                        <path d="M 158 245 Q 180 275 202 245 Z" fill="#ffffff" />
-                        <path d="M 154 243 Q 158 247 160 243 M 200 243 Q 202 247 206 243" stroke="#4a3728" stroke-width="1.5" fill="none" />
-                        <path d="M 172 223 Q 180 227 188 223" stroke="#e2a275" stroke-width="2" fill="none" />
-                    </g>
-
-                    <!-- JOSH'S BODY LAYOUT CODE (RIGHT SIDE) -->
-                    <g filter="url(#pencilSketch)">
-                        <!-- Shoulder Tilt Parameter Adjustments -->
-                        <path d="M 310 500 C 310 415 350 345 420 345 C 490 345 530 415 530 500 Z" fill="url(#joshShirt)" />
-                        <!-- Hoodie Line Overlays -->
-                        <path d="M 370 345 Q 420 385 470 345" fill="none" stroke="#334155" stroke-width="3" />
-                        <path d="M 405 375 L 395 440 M 435 375 L 445 440" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" />
-                        <circle cx="395" cy="443" r="3.5" fill="#cbd5e1" />
-                        <circle cx="445" cy="443" r="3.5" fill="#cbd5e1" />
-
-                        <!-- Neck Row -->
-                        <path d="M 402 350 L 402 300 L 438 300 L 438 350 Z" fill="#fbc490" />
-
-                        <!-- Josh's Facial Matrix Layout (Tilted Cheek Setup) -->
-                        <!-- Transforms the canvas matrix coordinate profile to apply Josh's head tilt -->
-                        <g transform="rotate(7 420 225)">
-                            <path d="M 380 225 C 380 170 390 140 420 130 C 450 140 460 170 460 225 C 460 268 450 288 420 288 C 390 288 380 268 380 225 Z" fill="#fbc490" />
-                            <circle cx="377" cy="220" r="8" fill="#e2a275" />
-                            <circle cx="463" cy="220" r="8" fill="#e2a275" />
-
-                            <!-- JOSH'S SHORT HAIR TRIM OVERRIDES RULES CODE -->
-                            <!-- Completely system-trimmed hair layers to match short haircut requested -->
-                            <path d="M 376 215 Q 380 135 420 132 Q 460 135 464 215 Q 455 160 420 160 Q 385 160 376 215 Z" fill="#7c2d12" />
-                            <path d="M 378 190 Q 395 155 420 172 Q 440 155 462 190 Q 420 150 378 190 Z" fill="#9a3412" />
-                            <path d="M 385 165 Q 420 150 455 165" stroke="#ea580c" stroke-width="1.2" fill="none" />
-
-                            <!-- Eye Configurations -->
-                            <ellipse cx="403" cy="208" rx="4.5" ry="3.2" fill="#ffffff" stroke="#4a3728" stroke-width="1.5" />
-                            <circle cx="403" cy="208" r="2.2" fill="#1e293b" />
-                            <ellipse cx="437" cy="208" rx="4.5" ry="3.2" fill="#ffffff" stroke="#4a3728" stroke-width="1.5" />
-                            <circle cx="437" cy="208" r="2.2" fill="#1e293b" />
-                            <path d="M 395 199 Q 403 194 411 200 M 429 200 Q 437 194 445 199" stroke="#4a3728" stroke-width="2.2" fill="none" />
-
-                            <!-- Smile Configurations -->
-                            <path d="M 401 246 Q 420 264 439 246" stroke="#4a3728" stroke-width="3" fill="none" />
-                            <path d="M 401 246 Q 420 274 439 246 Z" fill="#ffffff" />
-                            <path d="M 397 244 Q 400 248 402 244 M 438 244 Q 440 248 443 244" stroke="#4a3728" stroke-width="1.2" fill="none" />
-                            <path d="M 413 225 Q 420 228 427 225" stroke="#e2a275" stroke-width="1.8" fill="none" />
-                        </g>
-                    </g>
-
-                    <!-- THE 4 GOLD TROPHIES METALLIC GEOMETRY ARRAYS -->
-                    <!-- Code blocks rendering the high-tech championship structures directly on screen -->
-                    <g filter="url(#pencilSketch)">
-                        <!-- TROPHY 1: BEN'S TEAMWORK CHAMPION APPARATUS (LEFT FRONT) -->
-                        <g transform="translate(60, 310) scale(0.85)">
-                            <!-- Heavy Weighted Base Grid -->
-                            <rect x="40" y="160" width="130" height="24" rx="4" fill="#0f172a" stroke="#475569" stroke-width="1.5" />
-                            <rect x="50" y="148" width="110" height="12" fill="#334155" />
-                            <rect x="70" y="152" width="70" height="6" fill="#94a3b8" />
-                            <!-- Metallic Core Stems -->
-                            <path d="M 90 148 L 95 105 L 115 105 L 120 148 Z" fill="url(#trophyGold)" />
-                            <!-- THE GIANT 4-BLADE GOLD DROPS CORE MATRIX (CROSS SHAPE) -->
-                            <path d="M 60 40 C 35 40 25 65 50 85 C 75 105 105 105 105 85 C 105 65 85 40 60 40 Z" fill="url(#trophyGold)" stroke="#64748b" stroke-width="2" />
-                                        </div>
-
-            <!-- Team Description Cards Layout Grid -->
-            <div class="card-grid" style="width: 100%;">
-                <!-- Ben's Bio Card -->
-                <div class="card" style="text-align: center;">
-                    <span class="badge pilot-badge">Ben • Age 11</span>
-                    <h3 style="margin-top: 10px;">Ben: Lead Pilot & Photographer</h3>
-                    <p class="card-text" style="margin-top: 15px;">I fell in love with flying after practicing precision math layout systems and robotics tracks. Last year, I joined the school competitive drone team and won 4 Gold Trophies at the REC Foundation Aerial Drone Competition, making it all the way to the regional championship finals in California.</p>
-                    <p class="card-text">That specialized training taught me how to keep the drone perfectly steady, navigate complex property lines safely, and capture crisp, level overhead angles that make houses and events look incredibly clean.</p>
+            <!-- Ben's Biography Card (Hyper-Realistic Pencil Sketch Embedded) -->
+            <div class="card" style="text-align: center; position: relative; overflow: hidden; padding-top: 30px;">
+                <div class="avatar-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <img src="ben-sketch.png" alt="Ben Lead Pilot" style="width: 145px; height: 140px; border-radius: 50%; border: 3.5px solid #0071e3; object-fit: cover; box-shadow: 0 8px 24px rgba(0,113,227,0.15);">
                 </div>
+                <span class="badge pilot-badge">Ben • Age 11</span>
+                <h3>Ben: Lead Pilot & Photographer</h3>
+                <p class="card-text" style="margin-top: 15px;">I fell in love with flying after practicing precision math layout systems and robotics tracks. Last year, I joined the school competitive drone team and won 4 Gold Trophies at the REC Foundation Aerial Drone Competition, making it all the way to the regional championship finals in California.</p>
+                <p class="card-text">That specialized training taught me how to keep the drone perfectly steady, navigate complex property lines safely, and capture crisp, level overhead angles that make houses and events look incredibly clean.</p>
+            </div>
 
-                <!-- Josh's Bio Card -->
-                <div class="card" style="text-align: center;">
-                    <span class="badge ops-badge">Josh • Age 9</span>
-                    <h3 style="margin-top: 10px;">Josh: Operations & Editing</h3>
-                    <p class="card-text" style="margin-top: 15px;">While Ben is handling the flight paths up in the air, I command our entire operational setup down on the ground. I take care of downloading the raw 4K memory files, organizing our email folders, and tracking our booking calendar matrix so our clients get their media right on time.</p>
-                    <p class="card-text">I also help run our equipment safety checks before every single launch so our gear stays pristine. When you send an email or request a flight quote, you'll be talking directly to me!</p>
+            <!-- Josh's Biography Card (Hyper-Realistic SHORT HAIR Pencil Sketch Embedded) -->
+            <div class="card" style="text-align: center; position: relative; overflow: hidden; padding-top: 30px;">
+                <div class="avatar-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <img src="josh-sketch.png" alt="Josh Operations" style="width: 145px; height: 140px; border-radius: 50%; border: 3.5px solid #0b2545; object-fit: cover; box-shadow: 0 8px 24px rgba(11,37,69,0.15);">
                 </div>
+                <span class="badge ops-badge">Josh • Age 9</span>
+                <h3>Josh: Operations & Editing</h3>
+                <p class="card-text" style="margin-top: 15px;">While Ben is handling the flight paths up in the air, I command our entire operational setup down on the ground. I take care of downloading the raw 4K memory files, organizing our email folders, and tracking our booking calendar matrix so our clients get their media right on time.</p>
+                <p class="card-text">I also help run our equipment safety checks before every single launch so our gear stays pristine. When you send an email or request a flight quote, you'll be talking directly to me!</p>
             </div>
         </div>
     </section>
-
-    <section id="portfolio" class="section">
+        <section id="portfolio" class="section">
         <h2 class="section-title">Our Featured Aerial Work</h2>
         <p class="intro-p">Real-grade media captured during our precision flight operations. Click any card to enter our full gallery.</p>
         
@@ -281,7 +151,8 @@
             </div>
         </div>
     </section>
-        <!-- Master Story Flow Pricing Section (Book Flight Buttons Embedded) -->
+
+    <!-- Master Story Flow Pricing Section (Book Flight Buttons Embedded) -->
     <section id="pricing" class="section">
         <h2 class="section-title">Professional Aerial Rates</h2>
         <p class="intro-p">Starter flight packages tailored to your listing or event layout. Contact Josh for custom quotes.</p>
