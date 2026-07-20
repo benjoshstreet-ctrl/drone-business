@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheDroneBrothers.co | Aerial Media</title>
+    <title>The Drone Brothers | Professional Aerial Media</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Solid Premium Black Navigation Bar -->
     <nav class="navbar">
         <div class="nav-content">
-            <!-- Logo Block -> Disables underlines safely -->
-            <a href="#" class="brand-logo-link">
+            <a href="index.html" class="brand-logo-link">
                 <div class="brand-logo-container">
                     <div class="vector-drone-graphic">
                         <div class="drone-body-core"></div>
+                        <div class="drone-camera-eye"></div>
                         <div class="drone-wing-left"></div>
                         <div class="drone-wing-right"></div>
                         <div class="drone-prop-l"></div>
                         <div class="drone-prop-r"></div>
-                        <div class="drone-camera-eye"></div>
                     </div>
-                    <span class="logo-text-gradient">TheDroneBrothers.co</span>
+                    <span class="logo-text-gradient">THE DRONE BROTHERS</span>
                 </div>
             </a>
-            <!-- Top Navigation Tabs -->
             <div class="nav-links">
                 <a href="#story">Our Story</a>
                 <a href="#team">The Crew</a>
@@ -38,139 +35,184 @@
         </div>
     </nav>
 
-    <!-- Main Title Carousel Section -->
-    <section class="hero-section">
-        <div id="hero-carousel-container"></div>
+    <header class="hero-section">
+        <div id="hero-carousel-container">
+            <img src="bg1.jpeg" alt="Aerial Landscape View" class="carousel-item active">
+            <img src="bg2.jpeg" alt="Coastal Real Estate Shoot" class="carousel-item">
+            <img src="bg3.jpeg" alt="Mountain Drone Track" class="carousel-item">
+            <img src="bg4.jpeg" alt="Urban Cityscape Flyover" class="carousel-item">
+        </div>
         <div class="hero-overlay-darkener"></div>
         <div class="hero-content-box">
-            <span class="hero-badge">Saving for College Funds 🎓</span>
-            <h1>Precision from perspective.</h1>
-            <p class="tagline">Professional aerial photography for luxury resorts, weddings, and commercial listings.</p>
+            <span class="hero-badge">Professional 4K Aerial Video & Photography</span>
+            <h1>High-Grade Commercial Drone Operations</h1>
+            <p class="tagline">Providing crisp real estate mapping, cinematic event coverage, and premium business media packages.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="cta-button bouncable-btn">Book Flight</a>
-                <a href="gallery.html" class="secondary-button">See Our Work ↓</a>
+                <a href="#contact" class="cta-button bouncable-btn">Request a Flight Quote</a>
+                <a href="gallery.html" class="secondary-button bouncable-btn">Explore Full Gallery &rarr;</a>
             </div>
         </div>
-    </section>
-        <!-- Our Story Section -->
+    </header>
+
     <section id="story" class="section">
         <h2 class="section-title">Our Story</h2>
         <div class="story-box">
-            <p class="highlight-p">We didn't just ask our parents for a toy drone. We ran a crazy-successful neighborhood lemonade stand, pooled every single cent of our savings together to buy a professional DJI Mini 4 Pro, and launched a real business.</p>
-            <p class="story-text">My 9-year-old brother, Josh, and I, Ben, started this drone business to get a head start on saving for our college funds.</p>
+            <p class="highlight-p">We didn't just ask our parents for a toy drone. We spent months running a neighborhood lemonade stand, pooled every single cent of our savings together, and bought a professional DJI Mini 4 Pro to launch a real business.</p>
+            <p class="story-text">My 9-year-old brother, Josh, and I started The Drone Brothers to get a serious head start on saving for our future college funds. We combine competitive drone navigation experience with high-quality cameras to deliver clean, professional media for our neighborhood and local listings.</p>
         </div>
     </section>
 
-    <!-- Meet the Crew Section -->
     <section id="team" class="section bg-cards">
         <h2 class="section-title">Meet the Crew</h2>
         <div class="card-grid">
-            <div class="card">
+            <div class="card" style="position: relative; overflow: hidden; padding-top: 30px;">
+                <div class="avatar-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <svg width="100" height="100" viewBox="0 0 100 100" style="background: #e6f2ff; border-radius: 50%; border: 3px solid #0071e3; padding: 5px;">
+                        <circle cx="50" cy="35" r="20" fill="#fbc490"/>
+                        <path d="M50 15 C40 15 35 25 35 32 C35 35 42 35 50 35 C58 35 65 35 65 32 C65 25 60 15 50 15 Z" fill="#4a3728"/>
+                        <path d="M20 85 C20 65 35 55 50 55 C65 55 80 65 80 85 Z" fill="#0b2545"/>
+                        <path d="M35 60 L45 75 L55 75 L65 60 Z" fill="#0071e3"/>
+                        <circle cx="43" cy="35" r="2.5" fill="#111"/>
+                        <circle cx="57" cy="35" r="2.5" fill="#111"/>
+                        <path d="M45 45 Q50 49 55 45" stroke="#111" stroke-width="2" fill="none"/>
+                        <rect x="40" y="70" width="20" height="12" rx="3" fill="#222"/>
+                        <circle cx="45" cy="76" r="3" fill="#2997ff"/>
+                        <circle cx="55" cy="76" r="3" fill="#2997ff"/>
+                    </svg>
+                </div>
                 <span class="badge pilot-badge">Ben • Age 11</span>
                 <h3>Ben: Lead Pilot & Photographer</h3>
-                <p class="card-text">My passion for this started with a love for math and practicing coding. Once I was old enough, I joined the school drone team. In my very first year of flying, I earned 4 Gold Trophies at the REC Foundation Aerial Drone Competition and made it all the way to regionals in California.</p>
-                <p class="card-text">That training taught me how to fly with total precision—keeping the aircraft perfectly steady, navigating safely through tight gaps, and capturing aerial angles that make every event and project look its absolute best.</p>
+                <p class="card-text">I fell in love with flying after practicing precision math layout systems and robotics tracks. Last year, I joined the school competitive drone team and won 4 Gold Trophies at the REC Foundation Aerial Drone Competition, making it all the way to the regional championship finals in California.</p>
+                <p class="card-text">That specialized training taught me how to keep the drone perfectly steady, navigate complex property lines safely, and capture crisp, level overhead angles that make houses and events look incredibly clean.</p>
             </div>
-            <div class="card">
+
+            <div class="card" style="position: relative; overflow: hidden; padding-top: 30px;">
+                <div class="avatar-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <svg width="100" height="100" viewBox="0 0 100 100" style="background: #e6f2ff; border-radius: 50%; border: 3px solid #0b2545; padding: 5px;">
+                        <circle cx="50" cy="38" r="18" fill="#fbc490"/>
+                        <path d="M50 20 C42 20 38 28 38 34 C44 34 50 30 50 30 C50 30 56 34 62 34 C62 28 58 20 50 20 Z" fill="#624a2e"/>
+                        <path d="M22 85 C22 68 35 58 50 55 C65 58 78 68 78 85 Z" fill="#222"/>
+                        <circle cx="44" cy="38" r="2" fill="#111"/>
+                        <circle cx="56" cy="38" r="2" fill="#111"/>
+                        <path d="M46 47 Q50 51 54 47" stroke="#111" stroke-width="2" fill="none"/>
+                        <rect x="28" y="24" width="44" height="6" rx="2" fill="#0b2545"/>
+                        <path d="M70 30 L74 45 L70 50" stroke="#0071e3" stroke-width="3" fill="none"/>
+                        <circle cx="70" cy="50" r="3" fill="#0071e3"/>
+                        <rect x="35" y="68" width="30" height="20" rx="2" fill="#cbd5e1"/>
+                        <path d="M40 74 L48 74 M40 80 L54 80" stroke="#0071e3" stroke-width="2"/>
+                    </svg>
+                </div>
                 <span class="badge ops-badge">Josh • Age 9</span>
                 <h3>Josh: Operations & Editing</h3>
-                <p class="card-text">I knew I wanted to turn this idea into a real company, so I asked my brother, Josh, to tag along with me, and he was incredibly happy to join the team. To make the business a reality, we pooled our savings from a neighborhood lemonade stand to buy a professional DJI Mini 4 Pro.</p>
-                <p class="card-text">While I focus on capturing perfect shots, smooth videos, and stunning aerial footage, Josh commands our digital operations on the ground. He transforms our raw files into polished media, handles our email replies, and keeps our schedule on track.</p>
+                <p class="card-text">While Ben is handling the flight paths up in the air, I command our entire operational setup down on the ground. I take care of downloading the raw 4K memory files, organizing our email folders, and tracking our booking calendar matrix so our clients get their media right on time.</p>
+                <p class="card-text">I also help run our equipment safety checks before every single launch so our gear stays pristine. When you send an email or request a flight quote, you'll be talking directly to me!</p>
             </div>
         </div>
     </section>
-        <!-- Portfolio Gallery Section (Now routes directly to gallery.html) -->
-    <section id="portfolio" class="section">
+        <section id="portfolio" class="section">
         <h2 class="section-title">Our Featured Aerial Work</h2>
-        <p class="intro-p">Real high-grade media captured during our precision flight operations. Click any card to enter our full gallery.</p>
+        <p class="intro-p">Real-grade media captured during our precision flight operations. Click any card to enter our full gallery.</p>
         
         <div class="gallery-grid">
-            <!-- Slot 1: House -->
-            <a href="gallery.html" class="gallery-card-anchor bouncable-btn">
-                <div class="gallery-item">
-                    <div class="home-photo-wrapper-rounded">
-                        <img src="house.jpeg" alt="Luxury House Shoot">
+            <div class="gallery-card-anchor bouncable-btn">
+                <a href="gallery.html" class="gallery-card-anchor">
+                    <div class="gallery-item">
+                        <div class="home-photo-wrapper-rounded">
+                            <img src="house.jpeg" alt="Luxury House Shoot">
+                        </div>
+                        <div class="gallery-overlay">
+                            <h5>Luxury Resorts & Estates</h5>
+                            <p>A top-down overview of a hillside mansion, framing the entire footprint of the property, driveway, and pool layout for high-end real estate listings.</p>
+                        </div>
                     </div>
-                    <div class="gallery-overlay">
-                        <h5>Luxury Resorts & Estates</h5>
-                        <p>A top-down overview of a hillside mansion, framing the entire footprint of the property, driveway, and pool layout for real estate portfolios.</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <!-- Slot 2: Los Angeles View -->
-            <a href="gallery.html" class="gallery-card-anchor bouncable-btn">
-                <div class="gallery-item">
-                    <div class="home-photo-wrapper-rounded">
-                        <img src="losangeles.jpeg" alt="Cityscape Aerial photography">
+            <div class="gallery-card-anchor bouncable-btn">
+                <a href="gallery.html" class="gallery-card-anchor">
+                    <div class="gallery-item">
+                        <div class="home-photo-wrapper-rounded">
+                            <img src="losangeles.jpeg" alt="Cityscape Overlook">
+                        </div>
+                        <div class="gallery-overlay">
+                            <h5>Urban Landmarks & Infrastructure</h5>
+                            <p>Stunning 4K structural sweeps capturing city architecture towers, showing off extreme drone stabilization and crisp camera balance during daytime flights.</p>
+                        </div>
                     </div>
-                    <div class="gallery-overlay">
-                        <h5>Cityscapes & Commercial</h5>
-                        <p>Keeping the camera perfectly level over open water to capture the beautiful skyline and marina from an altitude that makes the city look completely cinematic.</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <!-- Slot 3: Lighthouse -->
-            <a href="gallery.html" class="gallery-card-anchor bouncable-btn">
-                <div class="gallery-item">
-                    <div class="home-photo-wrapper-rounded">
-                        <img src="lighthouse.jpeg" alt="Lighthouse Flight">
+            <div class="gallery-card-anchor bouncable-btn">
+                <a href="gallery.html" class="gallery-card-anchor">
+                    <div class="gallery-item">
+                        <div class="home-photo-wrapper-rounded">
+                            <img src="lighthouse.jpeg" alt="Lighthouse Flight">
+                        </div>
+                        <div class="gallery-overlay">
+                            <h5>Special Landmarks</h5>
+                            <p>I flew right into the sunset path to frame this lighthouse, catching the golden sunlight reflecting off the grass paths and ocean waves perfectly.</p>
+                        </div>
                     </div>
-                    <div class="gallery-overlay">
-                        <h5>Special Landmarks</h5>
-                        <p>I flew right into the sunset path to frame this lighthouse, catching the golden sunlight reflecting off the grass path and water.</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <!-- Slot 4: Boat -->
-            <a href="gallery.html" class="gallery-card-anchor bouncable-btn">
-                <div class="gallery-item">
-                    <div class="home-photo-wrapper-rounded">
-                        <img src="boat.jpeg" alt="Maritime Property Shoot">
+            <div class="gallery-card-anchor bouncable-btn">
+                <a href="gallery.html" class="gallery-card-anchor">
+                    <div class="gallery-item">
+                        <div class="home-photo-wrapper-rounded">
+                            <img src="boat.jpeg" alt="Maritime Property Shoot">
+                        </div>
+                        <div class="gallery-overlay">
+                            <h5>Maritime & Waterfront</h5>
+                            <p>Using tournament-precision flying to orbit this massive historical ship, getting a crisp angle that shows the giant sails tracking over the open water paths.</p>
+                        </div>
                     </div>
-                    <div class="gallery-overlay">
-                        <h5>Maritime & Waterfront</h5>
-                        <p>Using tournament-precision flying to orbit this massive historical ship, getting a crisp angle that shows the giant red funnels and dockyard layout.</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </section>
-       <!-- Master Story Flow Pricing Section (Unified Brand Colors Mix) -->
+
+    <!-- Master Story Flow Pricing Section (Book Flight Buttons Embedded) -->
     <section id="pricing" class="section">
         <h2 class="section-title">Professional Aerial Rates</h2>
         <p class="intro-p">Starter flight packages tailored to your listing or event layout. Contact Josh for custom quotes.</p>
         
         <div class="spec-grid">
             <!-- Card 1: Real Estate -->
-            <div class="spec-box pricing-card" style="border-top-color: #0b2545;">
-                <span class="badge ops-badge" style="background-color: #e6f2ff; color: #0071e3;">Fast Turnaround</span>
-                <h4 style="margin-top: 10px; font-size: 20px; color: #0b2545;">Real Estate</h4>
-                <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$75 – $150</p>
-                <p>Crisp 4K top-down footprint overviews, driveway geometry framing, and property line mapping for luxury listings.</p>
+            <div class="spec-box pricing-card" style="border-top-color: #0b2545; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px; padding-bottom: 24px;">
+                <div>
+                    <span class="badge ops-badge" style="background-color: #e6f2ff; color: #0071e3;">Fast Turnaround</span>
+                    <h4 style="margin-top: 10px; font-size: 20px; color: #0b2545;">Real Estate</h4>
+                    <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$75 – $150</p>
+                    <p style="font-size: 14px; margin-bottom: 20px;">Crisp 4K top-down footprint overviews, driveway geometry framing, and property line mapping for luxury listings.</p>
+                </div>
+                <a href="#contact" class="nav-cta bouncable-btn" style="text-decoration: none; display: inline-block; background-color: #0071e3; color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-weight: 600; font-size: 14px; width: 100%;">Book Flight</a>
             </div>
 
             <!-- Card 2: Weddings -->
-            <div class="spec-box pricing-card" style="border-top-color: #0b2545;">
-                <span class="badge pilot-badge" style="background-color: #0b2545; color: #ffffff;">Full Day Flight</span>
-                <h4 style="margin-top: 10px; font-size: 20px; color: #0b2545;">Weddings & Events</h4>
-                <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$200 – $400</p>
-                <p>Cinematic golden hour orbits, tracking shots of the venue path, and smooth aerial edits to capture your memories perfectly.</p>
+            <div class="spec-box pricing-card" style="border-top-color: #0b2545; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px; padding-bottom: 24px;">
+                <div>
+                    <span class="badge pilot-badge" style="background-color: #0b2545; color: #ffffff;">Full Day Flight</span>
+                    <h4 style="margin-top: 10px; font-size: 20px; color: #0b2545;">Weddings & Events</h4>
+                    <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$200 – $400</p>
+                    <p style="font-size: 14px; margin-bottom: 20px;">Cinematic golden hour orbits, tracking shots of the venue path, and smooth aerial edits to capture your memories perfectly.</p>
+                </div>
+                <a href="#contact" class="nav-cta bouncable-btn" style="text-decoration: none; display: inline-block; background-color: #0071e3; color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-weight: 600; font-size: 14px; width: 100%;">Book Flight</a>
             </div>
 
             <!-- Card 3: Hotels & Resorts -->
-            <div class="spec-box pricing-card" style="border-top-color: #0b2545;">
-                <span class="badge ops-badge" style="background-color: #e6f2ff; color: #0071e3;">Premium Commercial</span>
-                <h4 style="margin-top: 10px; font-size: 20px; color: #0b2545;">Hotels & Resorts</h4>
-                <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$350 – $600</p>
-                <p>Tournament-precision fly-throughs, massive waterfront orbits, and promotional social loops for luxury travel destination boards.</p>
+            <div class="spec-box pricing-card" style="border-top-color: #0b2545; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px; padding-bottom: 24px;">
+                <div>
+                    <span class="badge ops-badge" style="background-color: #e6f2ff; color: #0071e3;">Premium Commercial</span>
+                    <h4 style="margin-top: 10px; font-size: 20px; color: #0b2545;">Hotels & Resorts</h4>
+                    <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$350 – $600</p>
+                    <p style="font-size: 14px; margin-bottom: 20px;">Tournament-precision fly-throughs, massive waterfront orbits, and promotional social loops for luxury travel destination boards.</p>
+                </div>
+                <a href="#contact" class="nav-cta bouncable-btn" style="text-decoration: none; display: inline-block; background-color: #0071e3; color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-weight: 600; font-size: 14px; width: 100%;">Book Flight</a>
             </div>
         </div>
     </section>
 
-    <!-- The Drone & Tech Capabilities Sheet -->
     <section id="gear" class="section">
         <h2 class="section-title">The DJI Mini 4 Pro</h2>
         <div class="spec-grid">
@@ -189,12 +231,11 @@
         </div>
     </section>
 
-    <!-- Our Goal / Contact Box -->
     <section id="contact" class="section contact-box">
         <h2>Our Goal</h2>
-        <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our goal is to give you awesome drone media—from weddings and commercial projects to high-end hotels and resorts—that makes your memories and listings stand out, all while you help us get one step closer towards paying for our future education.</p>
+        <p>We took everything we learned from competitive robotics and used it to set up a smooth, simple workflow for all of our clients. Our target is to build up our college savings while providing top-tier drone imagery for local businesses.</p>
         
-        <form action="https://formspree.io/f/mjgnkjee" method="POST" class="booking-form">
+        <form action="https://formspree.io" method="POST" class="booking-form">
             <div class="input-group">
                 <input type="text" name="name" placeholder="Your Name" required>
             </div>
@@ -208,36 +249,23 @@
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2026 TheDroneBrothers.co. All Rights Reserved. Saving for college, one flight at a time.</p>
+    <footer class="minimalist-brand-footer">
+        <p>&copy; 2026 The Drone Brothers Aerial Operations. Macomb County, MI. All Rights Reserved.</p>
     </footer>
 
-    <!-- BACKGROUND CAROUSEL ROTATION ENGINE -->
     <script>
-        const images = ['bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg', 'bg4.jpeg', 'bg5.jpeg', 'bg6.jpeg', 'bg7.jpeg', 'bg8.jpeg'];
-        const container = document.getElementById('hero-carousel-container');
+        const images = document.querySelectorAll('.carousel-item');
         let currentIndex = 0;
-
-        images.forEach((src, index) => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.className = 'carousel-item' + (index === 0 ? ' active' : '');
-            container.appendChild(img);
-        });
-
-        const elements = container.getElementsByClassName('carousel-item');
-
         setInterval(() => {
-            elements[currentIndex].classList.remove('active');
+            images[currentIndex].classList.remove('active');
             currentIndex = (currentIndex + 1) % images.length;
-            elements[currentIndex].classList.add('active');
+            images[currentIndex].classList.add('active');
         }, 3000);
 
-        const toggleBtn = document.getElementById('theme-toggle');
-        toggleBtn.addEventListener('click', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
         });
     </script>
-
 </body>
 </html>
