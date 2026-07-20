@@ -731,3 +731,15 @@ body.dark-mode .card-text, body.dark-mode .spec-box p, body.dark-mode .gallery-o
         font-size: 13px !important;
     }
 }
+@media screen and (min-width: 1025px) {
+    .gallery-viewport-matrix-grid {
+        max-width: 1350px !important;
+    }
+    .clean-grid-3x4 {
+        gap: 36px !important;
+    }
+    .asset-rounded-rectangle-box {
+        border-radius: 28px !important;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05) !important;
+    }
+}
