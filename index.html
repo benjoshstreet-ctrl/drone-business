@@ -150,7 +150,7 @@
                 <h4 style="color: #0b2545; margin-bottom: 10px;">Pro Gear</h4>
                 <p style="font-size: 14px; color: #4a5568; line-height: 1.6;">We fly the industry-leading DJI Mini 4 Pro, capturing crisp 4K video frames and sharp, vivid HDR photos every time.</p>
             </div>
-            <div style="flex: 1; min-width: 260px; padding: 20px; background: #f8fafc; border-radius: 12px; border-top: 4px solid #0b2545;">
+            <div style="flex: 1; min-width: 260px; padding: 20px; background: #f8fafc; border-radius: 12px; border-top: 4px solid #0071e3;">
                 <h4 style="color: #0b2545; margin-bottom: 10px;">Reliable & Dedicated</h4>
                 <p style="font-size: 14px; color: #4a5568; line-height: 1.6;">We treat every single layout project like our own and won't finish the editing matrix until you love the final media results.</p>
             </div>
@@ -160,8 +160,7 @@
             </div>
         </div>
     </section>
-
-    <!-- THE CREW SECTION (LINKED DIRECTLY TO YOUR PORTRAITS) -->
+        <!-- THE CREW SECTION -->
     <section id="team" class="section">
         <h2 class="section-title">Meet the Crew</h2>
         <div class="card-grid">
@@ -187,7 +186,7 @@
         </div>
     </section>
 
-    <!-- RATES PACKAGES SECTION -->
+    <!-- COMPLETE RATES PACKAGES SECTION -->
     <section id="pricing" class="section bg-cards">
         <h2 class="section-title">Professional Aerial Rates</h2>
         <div class="spec-grid">
@@ -208,3 +207,65 @@
                 </div>
                 <a href="#contact" class="nav-cta bouncable-btn" style="text-decoration: none; display: inline-block; background-color: #0071e3; color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-weight: 600; font-size: 14px; width: 100%;">Book a Shoot</a>
             </div>
+
+            <div class="spec-box pricing-card" style="border-top-color: #0b2545; display: flex; flex-direction: column; justify-content: space-between; min-height: 350px; padding-bottom: 24px;">
+                <div>
+                    <h4 style="font-size: 20px; color: #0b2545;">Hotels & Resorts</h4>
+                    <p style="font-size: 24px; font-weight: 800; color: #0071e3; margin: 12px 0;">$350 – $600</p>
+                    <p style="font-size: 14px; margin-bottom: 20px;">Premium resort sweeping tracks, massive waterfront loops, and promotional media content optimized for social media views.</p>
+                </div>
+                <a href="#contact" class="nav-cta bouncable-btn" style="text-decoration: none; display: inline-block; background-color: #0071e3; color: white; padding: 10px 20px; border-radius: 20px; text-align: center; font-weight: 600; font-size: 14px; width: 100%;">Book a Shoot</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / BOOKING SECTION -->
+    <section id="contact" class="section contact-box">
+        <h2>Let’s Fly! 🚀</h2>
+        <p>Have a project in mind? Fill out this quick note and Josh will get right back to you with details on how we can help.</p>
+        
+        <form action="https://formspree.io" method="POST" class="booking-form">
+            <div class="input-group"><input type="text" name="name" placeholder="Your Name" required></div>
+            <div class="input-group">
+                <select name="project-type" style="width: 100%; padding: 15px; border-radius: 8px; border: 1px solid #cbd5e1; background: white; font-size: 15px; color: #4a5568;" required>
+                    <option value="" disabled selected>Project Type</option>
+                    <option value="Real Estate">Real Estate / Property Visuals</option>
+                    <option value="Local Business">Local Business Highlights</option>
+                    <option value="Event">Community Events & Sports</option>
+                    <option value="Other">Other Custom Aerial Mapping</option>
+                </select>
+            </div>
+            <div class="input-group"><input type="text" name="location" placeholder="Location of Shoot (Address or Neighborhood)" required></div>
+            <div class="input-group"><input type="text" name="contact-info" placeholder="Best Contact Info (Email or Phone Number)" required></div>
+            <div class="input-group"><textarea name="message" rows="4" placeholder="Tell us a little bit about your project details..." required></textarea></div>
+            <button type="submit" class="cta-button large-btn bouncable-btn">Submit Booking Request</button>
+        </form>
+    </section>
+
+    <!-- BLUE COMPANY FOOTER WITH YOUR 5% PROGRESS METER FULLY RESTORED -->
+    <footer class="minimalist-brand-footer" style="padding: 40px 20px; text-align: center; background: #0b2545; color: white;">
+        <div style="max-width: 500px; margin: 0 auto 25px auto;">
+            <p style="font-size: 14px; font-weight: 600; color: #60a5fa; margin-bottom: 8px;">🎓 Current College Fund Goal Progress: 5% Completed</p>
+            <div style="width: 100%; height: 10px; background: #1e293b; border-radius: 5px; overflow: hidden; border: 1px solid #1e40af;">
+                <div style="width: 5%; height: 100%; background: linear-gradient(90deg, #2997ff, #0071e3); border-radius: 5px;"></div>
+            </div>
+        </div>
+        <p style="font-size: 13px; opacity: 0.7;">&copy; 2026 The Drone Brothers Aerial Operations. Henderson & Las Vegas, NV. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const images = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }, 3000);
+
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
