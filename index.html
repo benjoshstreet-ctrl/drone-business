@@ -7,6 +7,26 @@
     <!-- Tab Vector Logo Graphic -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230b2545'/%3E%3Cpath d='M25 50 h50 M50 25 v50 M30 35 l40 30 M30 65 l40 -30' stroke='%230071e3' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23ffffff'/%3E%3Ccircle cx='50' cy='50' r='5' fill='%230071e3'/%3E%3C/svg%3E?v=2">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* INJECTED GRID PROTECTION TO ENFORCE PERFECT LEFT-TO-RIGHT SIDE-BY-SIDE DESIGN */
+        .packages-arcade-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 20px 0;
+            box-sizing: border-box;
+            align-items: stretch;
+        }
+        @media (max-width: 950px) {
+            .packages-arcade-row {
+                grid-template-columns: 1fr;
+                max-width: 450px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -72,7 +92,7 @@
             <!-- Connecting Arrow Bridge -->
             <div class="timeline-arrow-bridge" style="font-size: 44px; color: #0071e3; font-weight: 300; min-width: 50px; text-align: center;">➔</div>
 
-            <!-- DJI Drone Circle Graphic -->
+            <!-- DJI Drone Circle Graphic (LINKED DIRECTLY TO YOUR SECURE PHONE UPLOAD!) -->
             <div style="text-align: center; width: 180px;">
                 <div style="width: 150px; height: 140px; margin: 0 auto 15px auto; overflow: hidden; border-radius: 50%; border: 4px solid #0b2545; box-shadow: 0 10px 25px rgba(11,37,69,0.15);">
                     <img src="920BBF11-F203-47AD-A206-0655308894B5.png" alt="Our DJI Mini 4 Pro Flying" style="width: 100%; height: 100%; object-fit: cover;">
@@ -90,7 +110,7 @@
             </p>
         </div>
 
-        <!-- 8-SECOND VIDEO REEL SHOWCASE BOX CONTAINER WITH FORCED LOOP PROTOCOLS -->
+        <!-- FIXED 8-SECOND VIDEO SHOWREEL CONTAINER WITH FORCED AUTOPLAY LOOP PROTOCOLS -->
         <div style="max-width: 750px; margin: 40px auto 10px auto; padding: 0 15px; text-align: center;">
             <h4 style="font-size: 18px; color: #0b2545; margin-bottom: 15px; font-weight: 700;">Watch Our 8-Second Flight Operations Showreel 🎬</h4>
             <div style="width: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.15); background: #000; border: 3px solid #e6f2ff; position: relative; padding-top: 56.25%;">
@@ -102,7 +122,7 @@
         </div>
     </section>
 
-    <!-- 3. ALL THE 4 PICTURES SECTION -->
+    <!-- 3. ALL THE 4 PICTURES SERVICES SECTION -->
     <section id="services" class="section bg-cards">
         <h2 class="section-title">Our Services & Featured Work</h2>
         <p class="intro-p" style="text-align: center; margin-bottom: 45px;">Simple, clear choices for local clients. Click any project card to explore our full media gallery.</p>
@@ -171,7 +191,6 @@
         <p class="intro-p" style="text-align: center; margin-bottom: 40px;">How we teamed up to build this brother-owned drone business from the ground up.</p>
         
         <div class="card-grid">
-            <!-- Ben's Biography Card -->
             <div class="card" style="text-align: center; position: relative; overflow: hidden; padding-top: 20px;">
                 <div class="avatar-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
                     <img src="Ben_Drone.png" alt="Ben Lead Pilot" style="width: 140px; height: 140px; border-radius: 50%; border: 3px solid #0071e3; object-fit: cover; box-shadow: 0 8px 24px rgba(0,113,227,0.15);">
@@ -181,7 +200,6 @@
                 <p class="card-text" style="margin-top: 15px;">I am the pilot behind our aerial views. When Josh and I decided to buy a professional drone from our savings, I wanted to make sure we're the safest choice out there. My edge comes from winning 4 Gold Trophies at the REC Foundation Aerial Drone Competition and making it all the way to the regional finals. That tournament-precision training taught me how to handle safe flight paths, so I know exactly how to keep our aircraft rock-steady and smoothly frame your property lines without any close calls.</p>
             </div>
 
-            <!-- Josh's Biography Card -->
             <div class="card" style="text-align: center; position: relative; overflow: hidden; padding-top: 20px;">
                 <div class="avatar-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
                     <img src="Josh_Drone.png" alt="Josh Operations" style="width: 140px; height: 140px; border-radius: 50%; border: 3px solid #0b2545; object-fit: cover; box-shadow: 0 8px 24px rgba(11,37,69,0.15);">
@@ -203,7 +221,7 @@
                 <h4 style="color: #0b2545; margin-bottom: 10px;">🛸 Pro Gear</h4>
                 <p style="font-size: 14px; color: #4a5568; line-height: 1.6;">We fly the industry-leading DJI Mini 4 Pro, capturing crisp 4K video frames and sharp, vivid HDR photos every time.</p>
             </div>
-            <div style="flex: 1; min-width: 260px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); border-top: 4px solid #0b2545;">
+            <div style="flex: 1; min-width: 260px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); border-top: 4px solid #0071e3;">
                 <h4 style="color: #0b2545; margin-bottom: 10px;">🎯 Reliable & Dedicated</h4>
                 <p style="font-size: 14px; color: #4a5568; line-height: 1.6;">We treat every single layout project like our own and won't finish the editing matrix until you love the final media results.</p>
             </div>
@@ -214,43 +232,110 @@
         </div>
     </section>
 
-    <!-- 6. PREMIUM VALUE PACKAGES SECTION (FIXED VERTICAL STACK OVERRIDES COMPLETE) -->
+    <!-- 6. RESTORED SIDE-BY-SIDE PACKAGES (ARCADE UPGRADES ACTIVE) -->
     <section id="pricing" class="section">
         <h2 class="section-title">Professional Packages</h2>
-        <p class="intro-p" style="text-align: center; margin-bottom: 40px;">Select your coverage deck below. All packages go directly into college fund tracks.</p>
+        <p class="intro-p" style="text-align: center; margin-bottom: 50px;">Select your coverage deck below. All packages go directly into college fund tracks.</p>
         
-        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; padding: 10px 0;">
-            
-            <!-- SILVER BOX FRAME -->
-            <div style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 2px solid #cbd5e1; border-top: 8px solid #cbd5e1; box-sizing: border-box; width: 100%;">
-                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 15px; gap: 10px;">
-                    <h3 style="margin: 0; color: #0b2545; font-size: 24px;">🥈 Silver Package</h3>
-                    <span style="font-size: 28px; font-weight: 800; color: #0071e3;">$149</span>
+        <div class="packages-arcade-row">
+            <!-- SILVER CARD -->
+            <div style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 2px solid #cbd5e1; border-top: 8px solid #cbd5e1; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; min-height: 440px;">
+                <div>
+                    <span class="badge" style="background-color: #f1f5f9; color: #475569; font-weight: 700; display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px;">🥈 Silver Package</span>
+                    <p style="font-size: 32px; font-weight: 800; color: #0b2545; margin: 15px 0 10px 0;">$149</p>
+                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Get your listing online fast with 5 clean overhead property photos and 2 cinematic video clips to capture your yard lines perfectly. This package is an amazing, rock-solid way to make any standard property look great!</p>
                 </div>
-                <p style="font-size: 15px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Get your listing online fast with 5 clean overhead property photos and 2 cinematic video clips to capture your yard lines perfectly. This package is an amazing, rock-solid way to make any standard property look great!</p>
-                <a href="#contact" class="cta-button bouncable-btn" style="text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px;">Book Silver Package</a>
+                <a href="#contact" onclick="autoSelectPackage('Silver ($149)')" class="cta-button bouncable-btn" style="text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; text-decoration: none; font-weight: 700;">Book Silver Package</a>
             </div>
 
-            <!-- GOLD BOX FRAME WITH ARCADE WHITE BANNER -->
-            <div style="background: #fffdf5; border-radius: 16px; padding: 35px 30px 30px 30px; box-shadow: 0 10px 25px rgba(234,179,8,0.12); border: 2px solid #fef08a; border-top: 8px solid #eab308; position: relative; box-sizing: border-box; width: 100%;">
-                <div style="background: white; color: #ca8a04; border: 2px solid #eab308; padding: 4px 16px; border-radius: 20px; font-size: 11px; font-weight: 900; letter-spacing: 1px; width: fit-content; text-transform: uppercase; margin-bottom: 15px;">RECOMMENDED</div>
-                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 15px; gap: 10px;">
-                    <h3 style="margin: 0; color: #0b2545; font-size: 24px;">🥇 Gold Package</h3>
-                    <span style="font-size: 28px; font-weight: 800; color: #ca8a04;">$249</span>
+            <!-- GOLD CARD (WHITE RECOMMENDED BADGE + BEST DEAL TEXT COPY) -->
+            <div style="background: #fffdf5; border-radius: 16px; padding: 35px 30px 30px 30px; box-shadow: 0 10px 25px rgba(234,179,8,0.12); border: 2px solid #fef08a; border-top: 8px solid #eab308; position: relative; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; min-height: 440px;">
+                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: white; color: #ca8a04; padding: 4px 20px; border-radius: 20px; font-size: 11px; font-weight: 900; letter-spacing: 1.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); border: 2px solid #eab308; text-transform: uppercase; white-space: nowrap; z-index: 10;">RECOMMENDED</div>
+                <div>
+                    <span class="badge" style="background-color: #fef9c3; color: #a16207; font-weight: 700; display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px;">🥇 Gold Package</span>
+                    <p style="font-size: 32px; font-weight: 800; color: #ca8a04; margin: 15px 0 10px 0;">$249</p>
+                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Expand your media layout with 15 high-res property photos and 6 tracking video clips so you get full yard-to-roof coverage. This tier is our absolute best deal and gives you triple the visuals to make luxury listings pop super, super good!</p>
                 </div>
-                <p style="font-size: 15px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Expand your media layout with 15 high-res property photos and 6 tracking video clips so you get full yard-to-roof coverage. This tier is super, super good and gives you triple the visuals to make luxury listings pop!</p>
-                <a href="#contact" class="cta-button bouncable-btn" style="background-color: #ca8a04; text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; box-shadow: 0 4px 12px rgba(202,138,4,0.25);">Book Gold Package</a>
+                <a href="#contact" onclick="autoSelectPackage('Gold ($249)')" class="cta-button bouncable-btn" style="background-color: #ca8a04; text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(202,138,4,0.25);">Book Gold Package</a>
             </div>
 
-            <!-- DIAMOND BOX FRAME WITH BEST DEAL PREMIUM BANNER -->
-            <div style="background: #fdfeff; border-radius: 16px; padding: 35px 30px 30px 30px; box-shadow: 0 10px 25px rgba(11,37,69,0.06); border: 2px solid #bfdbfe; border-top: 8px solid #1d4ed8; box-sizing: border-box; width: 100%;">
-                <div style="background: linear-gradient(135deg, #0b2545, #001e3d); color: #60a5fa; border: 1px solid #1d4ed8; padding: 4px 18px; border-radius: 20px; font-size: 11px; font-weight: 900; letter-spacing: 1px; width: fit-content; text-transform: uppercase; margin-bottom: 15px;">✨ BEST DEAL ✨</div>
-                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 15px; gap: 10px;">
-                    <h3 style="margin: 0; color: #0b2545; font-size: 24px;">💎 Diamond Package</h3>
-                    <span style="font-size: 28px; font-weight: 800; color: #0b2545;">$399</span>
+            <!-- DIAMOND CARD (CLEAN PREMIUM TOP LAYER) -->
+            <div style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 2px solid #cbd5e1; border-top: 8px solid #1d4ed8; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; min-height: 440px;">
+                <div>
+                    <span class="badge" style="background-color: #dbeafe; color: #1e40af; font-weight: 700; display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px;">💎 Diamond Package</span>
+                    <p style="font-size: 32px; font-weight: 800; color: #0b2545; margin: 15px 0 10px 0;">$399</p>
+                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Deliver our absolute best full-coverage media deck with 35 high-res photos and 15 video clips, plus 1 custom tracking Master Shot. This package is absolutely insanely good—flying a sweeping, cinematic orbit all the way around your property structure to capture the entire landscape loop like a real movie scene!</p>
                 </div>
-                <p style="font-size: 15px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Deliver our absolute best full-coverage media deck with 35 high-res photos and 15 video clips, plus 1 custom tracking Master Shot. This package is absolutely insanely good—flying a sweeping, cinematic orbit all the way around your property structure to capture the entire landscape loop like a real movie scene!</p>
-                <a href="#contact" class="cta-button bouncable-btn" style="background-color: #0b2545; text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; box-shadow: 0 4px 12px rgba(11,37,69,0.2);"><Select Diamond Package>Book Diamond Package</a>
+                <a href="#contact" onclick="autoSelectPackage('Diamond ($399)')" class="cta-button bouncable-btn" style="background-color: #0b2545; text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(11,37,69,0.2);">Book Diamond Package</a>
             </div>
         </div>
     </section>
+        <!-- 7. SEPARATED BOTTOM BOOKING SYSTEM WITH OPTION SELECTION FIELD -->
+    <section id="contact" class="section contact-box" style="clear: both; display: block; width: 100%; max-width: 750px; margin: 60px auto; box-sizing: border-box;">
+        <h2>Let’s Fly! 🚀</h2>
+        <p>Have an aerial media project or listing layout in Henderson or Las Vegas? Fill out this quick note and Josh will get right back to you with details on how we can help.</p>
+        
+        <form action="https://formspree.io" method="POST" class="booking-form">
+            <div class="input-group"><input type="text" name="name" placeholder="Your Name" required></div>
+            
+            <div class="input-group">
+                <select id="package-dropdown" name="selected-package" style="width: 100%; padding: 15px; border-radius: 8px; border: none; background: white; font-size: 15px; color: #4a5568;" required>
+                    <option value="" disabled selected>Choose Your Package Level</option>
+                    <option value="Silver ($149)">🥈 Silver Package ($149)</option>
+                    <option value="Gold ($249)">🥇 Gold Package ($249) – Recommended</option>
+                    <option value="Diamond ($399)">💎 Diamond Package ($399)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <select name="project-type" style="width: 100%; padding: 15px; border-radius: 8px; border: none; background: white; font-size: 15px; color: #4a5568;" required>
+                    <option value="" disabled selected>Project Type / Asset Focus</option>
+                    <option value="Real Estate">Real Estate Listings / Homes</option>
+                    <option value="Local Business">Local Business Promo / Shop Fronts</option>
+                    <option value="Event">Community Events & Sports Games</option>
+                    <option value="Other">Other Custom Flight Project</option>
+                </select>
+            </div>
+            
+            <div class="input-group"><input type="text" name="location" placeholder="Location of Shoot (Address or Neighborhood)" required></div>
+            <div class="input-group"><input type="text" name="contact-info" placeholder="Best Contact Info (Email or Phone Number)" required></div>
+            <div class="input-group"><textarea name="message" rows="4" placeholder="Tell us a little bit about your project details..." required></textarea></div>
+            <button type="submit" class="cta-button large-btn bouncable-btn">Submit Booking Request</button>
+        </form>
+    </section>
+
+    <!-- 8. FOOTER WITH METER BAR TRACKER -->
+    <footer class="minimalist-brand-footer" style="padding: 40px 20px; text-align: center; background: #0b2545; color: white; clear: both; display: block; width: 100%;">
+        <div style="max-width: 500px; margin: 0 auto 25px auto;">
+            <p style="font-size: 14px; font-weight: 600; color: #60a5fa; margin-bottom: 8px;">🎓 Current College Fund Goal Progress: 5% Completed</p>
+            <div style="width: 100%; height: 10px; background: #1e293b; border-radius: 5px; overflow: hidden; border: 1px solid #1e40af;">
+                <div style="width: 5%; height: 100%; background: linear-gradient(90deg, #2997ff, #0071e3); border-radius: 5px;"></div>
+            </div>
+        </div>
+        <p style="font-size: 13px; opacity: 0.7;">&copy; 2026 The Drone Brothers Aerial Operations. Proudly serving Henderson & Las Vegas, NV. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const images = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }, 3000);
+
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        /* DYNAMIC AUTO-SELECTION SCRIPT ENGINE */
+        function autoSelectPackage(packageValue) {
+            const dropdown = document.getElementById('package-dropdown');
+            if (dropdown) {
+                dropdown.value = packageValue;
+            }
+        }
+    </script>
+</body>
+</html>
