@@ -8,7 +8,19 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://w3.org' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230b2545'/%3E%3Cpath d='M25 50 h50 M50 25 v50 M30 35 l40 30 M30 65 l40 -30' stroke='%230071e3' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23ffffff'/%3E%3Ccircle cx='50' cy='50' r='5' fill='%230071e3'/%3E%3C/svg%3E?v=2">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* INJECTED GRID PROTECTION TO ENFORCE PERFECT LEFT-TO-RIGHT SIDE-BY-SIDE DESIGN */
+        /* FIXED MOBILE RESPONSIVE ENGINE - AUTOMATICALLY ROTATES ARROWS BASED ON SCREEN SIZE */
+        .timeline-flex-bridge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            padding: 10px;
+        }
+        .desktop-arrow { display: block; font-size: 44px; color: #0071e3; font-weight: 300; min-width: 50px; text-align: center; }
+        .mobile-arrow { display: none; font-size: 44px; color: #0071e3; font-weight: 300; margin: 15px 0; text-align: center; }
+        
         .packages-arcade-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -20,7 +32,14 @@
             box-sizing: border-box;
             align-items: stretch;
         }
-        @media (max-width: 950px) {
+
+        @media (max-width: 768px) {
+            .timeline-flex-bridge {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .desktop-arrow { display: none; }
+            .mobile-arrow { display: block; }
             .packages-arcade-row {
                 grid-template-columns: 1fr;
                 max-width: 450px;
@@ -80,7 +99,7 @@
     <section id="story" class="section">
         <h2 class="section-title">From Lemonade Stand to the Sky</h2>
         
-        <div style="display: flex; align-items: center; justify-content: center; gap: 30px; max-width: 800px; margin: 0 auto 40px auto; padding: 10px; flex-wrap: wrap;">
+        <div class="timeline-flex-bridge">
             <!-- Lemonade Stand Circle Graphic -->
             <div style="text-align: center; width: 180px;">
                 <div style="width: 150px; height: 140px; margin: 0 auto 15px auto; overflow: hidden; border-radius: 50%; border: 4px solid #0071e3; box-shadow: 0 10px 25px rgba(0,113,227,0.15);">
@@ -89,10 +108,11 @@
                 <p style="font-size: 14px; font-weight: 700; color: #0b2545; margin: 0;">Our Startup Hustle</p>
             </div>
 
-            <!-- Connecting Arrow Bridge -->
-            <div class="timeline-arrow-bridge" style="font-size: 44px; color: #0071e3; font-weight: 300; min-width: 50px; text-align: center;">➔</div>
+            <!-- Responsive Arrows -->
+            <div class="desktop-arrow">➔</div>
+            <div class="mobile-arrow">⬇</div>
 
-            <!-- DJI Drone Circle Graphic (LINKED DIRECTLY TO YOUR SECURE PHONE UPLOAD!) -->
+            <!-- DJI Drone Circle Graphic -->
             <div style="text-align: center; width: 180px;">
                 <div style="width: 150px; height: 140px; margin: 0 auto 15px auto; overflow: hidden; border-radius: 50%; border: 4px solid #0b2545; box-shadow: 0 10px 25px rgba(11,37,69,0.15);">
                     <img src="920BBF11-F203-47AD-A206-0655308894B5.png" alt="Our DJI Mini 4 Pro Flying" style="width: 100%; height: 100%; object-fit: cover;">
@@ -106,23 +126,24 @@
                 We love technology, flight, and building things together. We set an aggressive savings target to run our neighborhood lemonade stand until we earned enough to purchase our first piece of pro flight gear—a DJI Mini 4 Pro.
             </p>
             <p class="story-text" style="font-size: 16px; line-height: 1.8; text-align: center; color: #4a5568; font-weight: 600;">
-                Today, we take crisp, high-resolution aerial photos and video for real estate listings, local businesses, and community events. Every job we complete helps us gain real-world operations experience and goes directly toward saving for our future college funds.
+                Today, we take crisp, high-resolution aerial photos and video for listings, local businesses, and community events. Every job we complete helps us gain real-world operations experience and goes directly toward saving for our future college funds.
             </p>
         </div>
 
-        <!-- FIXED 8-SECOND VIDEO SHOWREEL CONTAINER WITH FORCED AUTOPLAY LOOP PROTOCOLS -->
+        <!-- FIXED CROSS-PLATFORM VIDEO REEL SHOWCASE CONTAINER WITH DUAL FORMAT FORMATTING -->
         <div style="max-width: 750px; margin: 40px auto 10px auto; padding: 0 15px; text-align: center;">
             <h4 style="font-size: 18px; color: #0b2545; margin-bottom: 15px; font-weight: 700;">Watch Our 8-Second Flight Operations Showreel 🎬</h4>
             <div style="width: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.15); background: #000; border: 3px solid #e6f2ff; position: relative; padding-top: 56.25%;">
-                <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                <video autoplay loop muted playsinline controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                     <source src="video-output-6D002DF2-8E20-4BA0-B653-AED5F0BBF56A-1.MOV" type="video/quicktime">
+                    <source src="video-output-6D002DF2-8E20-4BA0-B653-AED5F0BBF56A-1.MOV" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
     </section>
 
-    <!-- 3. ALL THE 4 PICTURES SERVICES SECTION -->
+    <!-- 3. ALL THE 4 PICTURES SECTION -->
     <section id="services" class="section bg-cards">
         <h2 class="section-title">Our Services & Featured Work</h2>
         <p class="intro-p" style="text-align: center; margin-bottom: 45px;">Simple, clear choices for local clients. Click any project card to explore our full media gallery.</p>
@@ -232,7 +253,7 @@
         </div>
     </section>
 
-    <!-- 6. RESTORED SIDE-BY-SIDE PACKAGES (ARCADE UPGRADES ACTIVE) -->
+    <!-- 6. UNIVERSAL SIDE-BY-SIDE PACKAGES (RE-WRITTEN REMIX ACTIVE) -->
     <section id="pricing" class="section">
         <h2 class="section-title">Professional Packages</h2>
         <p class="intro-p" style="text-align: center; margin-bottom: 50px;">Select your coverage deck below. All packages go directly into college fund tracks.</p>
@@ -243,37 +264,37 @@
                 <div>
                     <span class="badge" style="background-color: #f1f5f9; color: #475569; font-weight: 700; display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px;">🥈 Silver Package</span>
                     <p style="font-size: 32px; font-weight: 800; color: #0b2545; margin: 15px 0 10px 0;">$149</p>
-                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Get your listing online fast with 5 clean overhead property photos and 2 cinematic video clips to capture your yard lines perfectly. This package is an amazing, rock-solid way to make any standard property look great!</p>
+                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Get 5 clean overhead photos and 2 cinematic video clips to capture your custom project perfectly from above. This package is an amazing, rock-solid way to make any standard shoot look great!</p>
                 </div>
                 <a href="#contact" onclick="autoSelectPackage('Silver ($149)')" class="cta-button bouncable-btn" style="text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; text-decoration: none; font-weight: 700;">Book Silver Package</a>
             </div>
 
-            <!-- GOLD CARD (WHITE RECOMMENDED BADGE + BEST DEAL TEXT COPY) -->
+            <!-- GOLD CARD (WHITE ARCADE RECOMMENDED BADGE + BEST DEAL COPY REMIX) -->
             <div style="background: #fffdf5; border-radius: 16px; padding: 35px 30px 30px 30px; box-shadow: 0 10px 25px rgba(234,179,8,0.12); border: 2px solid #fef08a; border-top: 8px solid #eab308; position: relative; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; min-height: 440px;">
                 <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: white; color: #ca8a04; padding: 4px 20px; border-radius: 20px; font-size: 11px; font-weight: 900; letter-spacing: 1.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); border: 2px solid #eab308; text-transform: uppercase; white-space: nowrap; z-index: 10;">RECOMMENDED</div>
                 <div>
                     <span class="badge" style="background-color: #fef9c3; color: #a16207; font-weight: 700; display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px;">🥇 Gold Package</span>
                     <p style="font-size: 32px; font-weight: 800; color: #ca8a04; margin: 15px 0 10px 0;">$249</p>
-                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Expand your media layout with 15 high-res property photos and 6 tracking video clips so you get full yard-to-roof coverage. This tier is our absolute best deal and gives you triple the visuals to make luxury listings pop super, super good!</p>
+                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Expand your media layout with 15 high-res photos and 6 tracking video clips so you get full, detailed coverage from every angle. This tier is our absolute best deal and gives you triple the visuals to make your project pop super, super good!</p>
                 </div>
                 <a href="#contact" onclick="autoSelectPackage('Gold ($249)')" class="cta-button bouncable-btn" style="background-color: #ca8a04; text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(202,138,4,0.25);">Book Gold Package</a>
             </div>
 
-            <!-- DIAMOND CARD (CLEAN PREMIUM TOP LAYER) -->
+            <!-- DIAMOND CARD -->
             <div style="background: white; border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 2px solid #cbd5e1; border-top: 8px solid #1d4ed8; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; min-height: 440px;">
                 <div>
                     <span class="badge" style="background-color: #dbeafe; color: #1e40af; font-weight: 700; display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px;">💎 Diamond Package</span>
                     <p style="font-size: 32px; font-weight: 800; color: #0b2545; margin: 15px 0 10px 0;">$399</p>
-                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Deliver our absolute best full-coverage media deck with 35 high-res photos and 15 video clips, plus 1 custom tracking Master Shot. This package is absolutely insanely good—flying a sweeping, cinematic orbit all the way around your property structure to capture the entire landscape loop like a real movie scene!</p>
+                    <p style="font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 20px;">Deliver our absolute best full-coverage media deck with 35 high-res photos and 15 video clips, plus 1 custom tracking Master Shot. This package is absolutely insanely good—flying a sweeping, cinematic orbit all the way around your project structure to capture the entire scene loop like a real movie!</p>
                 </div>
                 <a href="#contact" onclick="autoSelectPackage('Diamond ($399)')" class="cta-button bouncable-btn" style="background-color: #0b2545; text-align: center; width: 100%; box-sizing: border-box; display: block; font-size: 15px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(11,37,69,0.2);">Book Diamond Package</a>
             </div>
         </div>
     </section>
-        <!-- 7. SEPARATED BOTTOM BOOKING SYSTEM WITH OPTION SELECTION FIELD -->
+        <!-- 7. SEPARATED BOTTOM BOOKING SYSTEM -->
     <section id="contact" class="section contact-box" style="clear: both; display: block; width: 100%; max-width: 750px; margin: 60px auto; box-sizing: border-box;">
         <h2>Let’s Fly! 🚀</h2>
-        <p>Have an aerial media project or listing layout in Henderson or Las Vegas? Fill out this quick note and Josh will get right back to you with details on how we can help.</p>
+        <p>Have an aerial media project or custom flight layout in Henderson or Las Vegas? Fill out this quick note and Josh will get right back to you with details on how we can help.</p>
         
         <form action="https://formspree.io/f/mjgnkjee" method="POST" class="booking-form">
             <div class="input-group"><input type="text" name="name" placeholder="Your Name" required></div>
@@ -304,7 +325,7 @@
         </form>
     </section>
 
-    <!-- 8. FOOTER WITH METER BAR TRACKER -->
+    <!-- 8. BLUE BROTHER-OWNED FOOTER -->
     <footer class="minimalist-brand-footer" style="padding: 40px 20px; text-align: center; background: #0b2545; color: white; clear: both; display: block; width: 100%;">
         <div style="max-width: 500px; margin: 0 auto 25px auto;">
             <p style="font-size: 14px; font-weight: 600; color: #60a5fa; margin-bottom: 8px;">🎓 Current College Fund Goal Progress: 5% Completed</p>
